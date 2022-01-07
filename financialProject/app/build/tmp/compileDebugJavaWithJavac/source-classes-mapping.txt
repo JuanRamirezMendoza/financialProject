@@ -1,0 +1,6 @@
+com/financialproject/financialproject/BuildConfig.java
+ com.financialproject.financialproject.BuildConfig
+com/financialproject/financialproject/databinding/ActivityInconmingViewBinding.java
+ com.financialproject.financialproject.databinding.ActivityInconmingViewBinding
+com/financialproject/financialproject/databinding/ActivityMainBinding.java
+ com.financialproject.financialproject.databinding.ActivityMainBinding
