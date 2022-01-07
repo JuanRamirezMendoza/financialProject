@@ -4,7 +4,19 @@
         "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_menu.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_menu_view.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_menu_view.xml"
+    },
+    {
         "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_inconming_view.xml",
         "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_inconming_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_menu2.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_menu2.xml"
     }
 ]

@@ -4,3 +4,9 @@ com/financialproject/financialproject/databinding/ActivityInconmingViewBinding.j
  com.financialproject.financialproject.databinding.ActivityInconmingViewBinding
 com/financialproject/financialproject/databinding/ActivityMainBinding.java
  com.financialproject.financialproject.databinding.ActivityMainBinding
+com/financialproject/financialproject/databinding/FragmentMenuBinding.java
+ com.financialproject.financialproject.databinding.FragmentMenuBinding
+com/financialproject/financialproject/databinding/ActivityMenuViewBinding.java
+ com.financialproject.financialproject.databinding.ActivityMenuViewBinding
+com/financialproject/financialproject/databinding/FragmentMenu2Binding.java
+ com.financialproject.financialproject.databinding.FragmentMenu2Binding

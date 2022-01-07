@@ -1,29 +1,35 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.databinding:viewbinding:4.2.2] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\71bfc6383a871385101b11e711d7d88f\viewbinding-4.2.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b9638ad342fd84867709610edf263416\core-ktx-1.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f2ee7319eb44c0f99f0bb273dbee8473\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\418f0be3b450772f454c849a49c7b3ca\constraintlayout-2.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\2b0fed62af365449a7238966cbc6b2f8\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\83f1f76978ed859007a2814306943df5\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\25acb749ee090b0947bc7176344c282a\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b527bc1f11b5cb93d84a58d3f4a5ec29\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\73eb0f728bd4459f5619302d3fb30cc3\activity-1.2.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f548c20a14cfcd31cc19e4a634da9869\appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\e7f55f8fb6f070be30db2d5f78c6983c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\41711006ee179662daae2446b3d55197\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f3d7fa9fd4c7ecab694d0941477d0971\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\90777f355910e46844480429cc00cb17\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\46e254d03306ebd6512563c9f7fe2e9a\transition-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\31e5c17cc91b4d4f20416c4301bb6216\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\3f241f947f8050fbf085cabfe0886d51\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\23febe236acf91c3f66c6771080bb7dd\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\cbead5b3bc173d8213fe481398e7d8e3\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\756f12cdd3a0425dc7c2f83004c60ce8\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\23febe236acf91c3f66c6771080bb7dd\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\db8a8a063ea6cb4e35e030a921ee3cf9\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f08ea4d73045ea90d3f17790848f293c\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\d6b50b7f314674dbb03e0d9cc4c50ab6\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\dcbaa2aac39fe3923d178e09c0a6e852\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\ac3a1437007f78409a3ddd2fd13b3979\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f772e648aeb03c7138fcc4171b8350c5\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.6.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\abcbc87edcbba6f2b412c42ea0e44c80\core-1.6.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\5094e2fe3696a337fa046a46c7f69900\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\4c3b9607efe448cce249623dafa4f2ee\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -36,30 +42,30 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\BGA072021\.gradle\caches\t
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\1ce8062e8146a3b660181c3065dde398\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\c969986f1f61d7d228a0804987c63dc0\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\e933849faedcd64b9c15fe2267b79931\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\9a2394be1905c94a32ae04d9e3230cc8\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\97a60de52e248d82a683813bedad8e35\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\0eaebf1ec0a38ace8ed05df1765fd8d2\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\975ba2d2aabde6fece2a6d4cfd7caf51\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\9a2394be1905c94a32ae04d9e3230cc8\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\558333aa6da85f133050d1e7f28c135c\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:3:5-52
 		INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f2ee7319eb44c0f99f0bb273dbee8473\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f2ee7319eb44c0f99f0bb273dbee8473\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\418f0be3b450772f454c849a49c7b3ca\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
@@ -82,26 +88,32 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\BG
 		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:11:9-68
-activity#com.financialproject.financialproject.InconmingView
+activity#com.financialproject.financialproject.MenuView
 ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:12:9-14:40
 	android:exported
 		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:13:13-42
+		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:13:13-37
+activity#com.financialproject.financialproject.InconmingView
+ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:15:9-17:40
+	android:exported
+		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:17:13-37
+	android:name
+		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:16:13-42
 activity#com.financialproject.financialproject.MainActivity
-ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml
@@ -116,6 +128,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\BGA07202
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\418f0be3b450772f454c849a49c7b3ca\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\2b0fed62af365449a7238966cbc6b2f8\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\2b0fed62af365449a7238966cbc6b2f8\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\83f1f76978ed859007a2814306943df5\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\83f1f76978ed859007a2814306943df5\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\25acb749ee090b0947bc7176344c282a\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\25acb749ee090b0947bc7176344c282a\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b527bc1f11b5cb93d84a58d3f4a5ec29\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
@@ -124,6 +138,8 @@ MERGED from [androidx.activity:activity:1.2.4] C:\Users\BGA072021\.gradle\caches
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\73eb0f728bd4459f5619302d3fb30cc3\activity-1.2.4\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f548c20a14cfcd31cc19e4a634da9869\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f548c20a14cfcd31cc19e4a634da9869\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\e7f55f8fb6f070be30db2d5f78c6983c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\e7f55f8fb6f070be30db2d5f78c6983c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\41711006ee179662daae2446b3d55197\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\41711006ee179662daae2446b3d55197\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f3d7fa9fd4c7ecab694d0941477d0971\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -136,16 +152,24 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BGA
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\31e5c17cc91b4d4f20416c4301bb6216\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\3f241f947f8050fbf085cabfe0886d51\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\3f241f947f8050fbf085cabfe0886d51\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\23febe236acf91c3f66c6771080bb7dd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\23febe236acf91c3f66c6771080bb7dd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\cbead5b3bc173d8213fe481398e7d8e3\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\cbead5b3bc173d8213fe481398e7d8e3\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\756f12cdd3a0425dc7c2f83004c60ce8\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\756f12cdd3a0425dc7c2f83004c60ce8\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\23febe236acf91c3f66c6771080bb7dd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\23febe236acf91c3f66c6771080bb7dd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\db8a8a063ea6cb4e35e030a921ee3cf9\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\db8a8a063ea6cb4e35e030a921ee3cf9\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f08ea4d73045ea90d3f17790848f293c\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f08ea4d73045ea90d3f17790848f293c\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\d6b50b7f314674dbb03e0d9cc4c50ab6\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\d6b50b7f314674dbb03e0d9cc4c50ab6\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\dcbaa2aac39fe3923d178e09c0a6e852\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\dcbaa2aac39fe3923d178e09c0a6e852\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\ac3a1437007f78409a3ddd2fd13b3979\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\ac3a1437007f78409a3ddd2fd13b3979\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f772e648aeb03c7138fcc4171b8350c5\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\f772e648aeb03c7138fcc4171b8350c5\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.6.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\abcbc87edcbba6f2b412c42ea0e44c80\core-1.6.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.6.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\abcbc87edcbba6f2b412c42ea0e44c80\core-1.6.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\5094e2fe3696a337fa046a46c7f69900\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -170,14 +194,14 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\BGA07202
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\c969986f1f61d7d228a0804987c63dc0\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\e933849faedcd64b9c15fe2267b79931\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\e933849faedcd64b9c15fe2267b79931\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\9a2394be1905c94a32ae04d9e3230cc8\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\9a2394be1905c94a32ae04d9e3230cc8\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\97a60de52e248d82a683813bedad8e35\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\97a60de52e248d82a683813bedad8e35\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\0eaebf1ec0a38ace8ed05df1765fd8d2\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\0eaebf1ec0a38ace8ed05df1765fd8d2\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\975ba2d2aabde6fece2a6d4cfd7caf51\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\975ba2d2aabde6fece2a6d4cfd7caf51\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\9a2394be1905c94a32ae04d9e3230cc8\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\9a2394be1905c94a32ae04d9e3230cc8\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\558333aa6da85f133050d1e7f28c135c\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\558333aa6da85f133050d1e7f28c135c\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml

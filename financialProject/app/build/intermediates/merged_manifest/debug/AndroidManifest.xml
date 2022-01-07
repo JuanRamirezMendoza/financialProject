@@ -20,6 +20,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         <activity
+            android:name="com.financialproject.financialproject.MenuView"
+            android:exported="false" />
+        <activity
             android:name="com.financialproject.financialproject.InconmingView"
             android:exported="false" />
         <activity android:name="com.financialproject.financialproject.MainActivity" >
