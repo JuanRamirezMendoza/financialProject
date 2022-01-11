@@ -11,7 +11,7 @@
 9-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:5:5-25:19
+11-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:5:5-26:19
 12        android:allowBackup="true"
 12-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -27,34 +27,37 @@
 19        android:supportsRtl="true"
 19-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:10:9-35
 20        android:testOnly="true"
-21        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-21-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:11:9-68
+21        android:theme="@style/Theme.AppCompat.NoActionBar" >
+21-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:11:9-59
 22        <activity
 22-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:12:9-14:40
-23            android:name="com.financialproject.financialproject.MenuView"
-23-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:13:13-37
+23            android:name="com.financialproject.financialproject.ui.view.MenuView"
+23-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:13:13-45
 24            android:exported="false" />
 24-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:14:13-37
 25        <activity
 25-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:15:9-17:40
-26            android:name="com.financialproject.financialproject.InconmingView"
-26-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:16:13-42
+26            android:name="com.financialproject.financialproject.ui.view.InconmingView"
+26-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:16:13-50
 27            android:exported="false" />
 27-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:17:13-37
-28        <activity android:name="com.financialproject.financialproject.MainActivity" >
-28-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:18:9-24:20
-28-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:18:19-47
-29            <intent-filter>
-29-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:19:13-23:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:20:17-69
-30-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:20:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:22:17-77
-32-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:22:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+28        <activity
+28-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:18:9-25:20
+29            android:name="com.financialproject.financialproject.ui.view.MainActivity"
+29-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:18:19-55
+30            android:label="" >
+30-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:19:13-29
+31            <intent-filter>
+31-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:20:13-24:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:21:17-69
+32-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:21:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:23:17-77
+34-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:23:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>

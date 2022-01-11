@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:padding="16dp"
-    tools:context=".InconmingView">
+    tools:context=".ui.view.InconmingView">
 
     <EditText
         android:layout_width="match_parent"
