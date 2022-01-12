@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.6.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\abcbc87edcbba6f2b412c42ea0e44c80\core-1.6.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.6.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\094ef38f3eb0576e22950f190096f7a8\core-1.6.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:extractNativeLibs="false"
 16        android:icon="@mipmap/ic_launcher"

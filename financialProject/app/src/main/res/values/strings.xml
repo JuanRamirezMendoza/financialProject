@@ -6,4 +6,8 @@
     <string name="fragmento_1">Fragmento 1</string>
     <string name="fragmento2">fragmento2</string>
     <string name="fragmento3">fragmento3</string>
+    <string name="home">HOME</string>
+    <string name="incoming">INCOMING</string>
+    <string name="expenses">EXPENSES</string>
+    <string name="safe">SAFE</string>
 </resources>

@@ -28,7 +28,8 @@ class MenuView : AppCompatActivity() {
         window.statusBarColor = Color.TRANSPARENT
         window.navigationBarColor = Color.TRANSPARENT
 
-        binding.button.setOnClickListener {
+
+        /*binding.button.setOnClickListener {
             val farm = supportFragmentManager.beginTransaction()
             farm.replace(binding.frameLayout.id, Fragment1())
             farm.commit()
@@ -40,6 +41,6 @@ class MenuView : AppCompatActivity() {
         }
         binding.button3.setOnClickListener {
 
-        }
+        }*/
     }
 }
