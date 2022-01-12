@@ -29,6 +29,8 @@ class MenuView : AppCompatActivity() {
         window.navigationBarColor = Color.TRANSPARENT
 
 
+
+
         /*binding.button.setOnClickListener {
             val farm = supportFragmentManager.beginTransaction()
             farm.replace(binding.frameLayout.id, Fragment1())
