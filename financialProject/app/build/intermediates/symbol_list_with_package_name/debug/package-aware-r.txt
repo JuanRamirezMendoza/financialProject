@@ -1112,6 +1112,7 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color back
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1805,8 +1806,11 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add
 drawable avd_hide_password
 drawable avd_show_password
+drawable bottom
+drawable bottom_background
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1815,11 +1819,14 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cirlce
+drawable cirlce_bigger
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable empty_tall_divider
 drawable expenses
 drawable home
 drawable ic_clock_black_24dp
@@ -1964,6 +1971,7 @@ id bestChoice
 id blank
 id blocking
 id bottom
+id bottom_navigation_view
 id bounce
 id bounceBoth
 id bounceEnd
@@ -2050,6 +2058,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id expenses
 id fade
 id fill
 id fill_horizontal
@@ -2086,6 +2095,7 @@ id ignoreRequest
 id image
 id immediateStop
 id included
+id incoming
 id info
 id invisible
 id inward
@@ -2196,6 +2206,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id placeholder
 id position
 id postLayout
 id progress_circular
@@ -2210,6 +2221,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id safe
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2510,6 +2522,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu bottom_menu_nav
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav
@@ -2565,6 +2578,7 @@ string home
 string icon_content_description
 string incoming
 string item_view_role_description
+string juan
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -2630,6 +2644,7 @@ string path_password_strike_through
 string safe
 string search_menu_title
 string status_bar_notification_info_overflow
+string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

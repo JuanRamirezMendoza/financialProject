@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/incoming"
+        android:title="@string/incoming"
+        android:icon="@drawable/incoming"/>
+    <item
+        android:id="@+id/placeholder"
+        android:title=""/>
+    <item
+        android:id="@+id/expenses"
+        android:title="@string/expenses"
+        android:icon="@drawable/expenses"/>
+    <item
+        android:id="@+id/safe"
+        android:title="@string/safe"
+        android:icon="@drawable/safe" />
+
+</menu>

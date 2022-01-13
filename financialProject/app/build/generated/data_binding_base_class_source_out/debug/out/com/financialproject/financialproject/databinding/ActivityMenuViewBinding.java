@@ -4,25 +4,43 @@ package com.financialproject.financialproject.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import com.financialproject.financialproject.R;
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityMenuViewBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final CoordinatorLayout rootView;
 
-  private ActivityMenuViewBinding(@NonNull RelativeLayout rootView) {
+  @NonNull
+  public final FloatingActionButton add;
+
+  @NonNull
+  public final BottomAppBar bottom;
+
+  @NonNull
+  public final BottomNavigationView bottomNavigationView;
+
+  private ActivityMenuViewBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull FloatingActionButton add, @NonNull BottomAppBar bottom,
+      @NonNull BottomNavigationView bottomNavigationView) {
     this.rootView = rootView;
+    this.add = add;
+    this.bottom = bottom;
+    this.bottomNavigationView = bottomNavigationView;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +61,32 @@ public final class ActivityMenuViewBinding implements ViewBinding {
 
   @NonNull
   public static ActivityMenuViewBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.add;
+      FloatingActionButton add = rootView.findViewById(id);
+      if (add == null) {
+        break missingId;
+      }
 
-    return new ActivityMenuViewBinding((RelativeLayout) rootView);
+      id = R.id.bottom;
+      BottomAppBar bottom = rootView.findViewById(id);
+      if (bottom == null) {
+        break missingId;
+      }
+
+      id = R.id.bottom_navigation_view;
+      BottomNavigationView bottomNavigationView = rootView.findViewById(id);
+      if (bottomNavigationView == null) {
+        break missingId;
+      }
+
+      return new ActivityMenuViewBinding((CoordinatorLayout) rootView, add, bottom,
+          bottomNavigationView);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }
