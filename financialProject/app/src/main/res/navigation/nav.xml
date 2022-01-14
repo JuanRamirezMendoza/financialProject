@@ -7,17 +7,23 @@
 
     <fragment
         android:id="@+id/fragment1"
-        android:name="com.financialproject.financialproject.ui.view.fragments.Fragment1"
-        android:label="fragment_1"
+        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentHome"
         tools:layout="@layout/fragment_1" />
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.financialproject.financialproject.ui.view.fragments.Fragment2"
-        android:label="fragment_2"
+        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentIncoming"
         tools:layout="@layout/fragment_2" />
     <fragment
         android:id="@+id/fragment3"
-        android:name="com.financialproject.financialproject.Fragment3"
-        android:label="fragment_3"
+        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentExpenses"
         tools:layout="@layout/fragment_3" />
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentSafe"
+        tools:layout="@layout/fragment_4" />
+
+    <fragment
+        android:id="@+id/fragmentAdd"
+        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentAdd"
+        tools:layout="@layout/fragment_add" />
 </navigation>

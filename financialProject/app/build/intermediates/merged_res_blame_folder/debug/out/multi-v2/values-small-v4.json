@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sebastian Ramirez\\.gradle\\caches\\transforms-2\\files-2.1\\678da10da7c280fc48d8a7c9138ef736\\material-1.4.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\BGA072021\\.gradle\\caches\\transforms-2\\files-2.1\\678da10da7c280fc48d8a7c9138ef736\\material-1.4.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

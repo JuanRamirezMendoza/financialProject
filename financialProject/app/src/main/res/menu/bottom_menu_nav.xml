@@ -8,16 +8,16 @@
     <item
         android:id="@+id/fragment2"
         android:title="@string/incoming"
-        android:icon="@drawable/incoming"/>
+        android:icon="@drawable/in"/>
     <item
         android:id="@+id/placeholder"
         android:title=""/>
     <item
         android:id="@+id/fragment3"
         android:title="@string/expenses"
-        android:icon="@drawable/expenses"/>
+        android:icon="@drawable/out"/>
     <item
-        android:id="@+id/safe"
+        android:id="@+id/fragment4"
         android:title="@string/safe"
         android:icon="@drawable/safe" />
 

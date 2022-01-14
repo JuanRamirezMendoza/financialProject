@@ -8,6 +8,7 @@
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom"
+        android:backgroundTint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom">
@@ -16,8 +17,10 @@
             android:id="@+id/bottom_navigation_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:itemTextColor="@color/items"
+            app:itemIconTint="@color/items"
             android:layout_marginEnd="16dp"
-            android:background="@android:color/transparent"
+            android:background="@color/white"
             app:menu="@menu/bottom_menu_nav" />
 
     </com.google.android.material.bottomappbar.BottomAppBar>
@@ -26,7 +29,10 @@
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:contentDescription="@string/todo"
+        app:borderWidth="0dp"
+        android:src="@drawable/add"
         app:layout_anchor="@id/bottom" />
 
     <androidx.fragment.app.FragmentContainerView
@@ -37,45 +43,4 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav"/>
 
-    <!--<com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tabTextColor="@color/back">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/home" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/incoming" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/expenses" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/safe" />
-
-    </com.google.android.material.tabs.TabLayout>-->
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-    <!--<ImageButton
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/cirlce"
-        android:padding="5dp"
-        android:src="@drawable/add" />-->

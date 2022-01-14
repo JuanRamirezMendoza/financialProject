@@ -3,24 +3,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.fragments.Fragment1">
+    tools:context=".ui.view.fragments.FragmentHome">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/blank"
-        android:layout_width="wrap_content"
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="36dp"
+        android:paddingStart="16dp"
         android:layout_gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_blank_fragment1"
-        android:textColor="@color/blue"
-        android:textSize="24sp" />
-
-    <EditText
-        android:layout_width="200dp"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/blank"/>
+        android:layout_below="@+id/welcome"
+        android:paddingStart="16dp"
+        android:layout_gravity="center"
+        android:text="@string/juan"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/name"
+        android:paddingStart="16dp"
+        tools:ignore="RtlSymmetry"/>
 
 </RelativeLayout>

@@ -6,9 +6,15 @@ com/financialproject/financialproject/databinding/ActivityMainBinding.java
  com.financialproject.financialproject.databinding.ActivityMainBinding
 com/financialproject/financialproject/databinding/Fragment1Binding.java
  com.financialproject.financialproject.databinding.Fragment1Binding
+com/financialproject/financialproject/databinding/FragmentAddBinding.java
+ com.financialproject.financialproject.databinding.FragmentAddBinding
 com/financialproject/financialproject/databinding/Fragment2Binding.java
  com.financialproject.financialproject.databinding.Fragment2Binding
-com/financialproject/financialproject/databinding/Fragment3Binding.java
- com.financialproject.financialproject.databinding.Fragment3Binding
+com/financialproject/financialproject/databinding/Fragment4Binding.java
+ com.financialproject.financialproject.databinding.Fragment4Binding
 com/financialproject/financialproject/databinding/ActivityMenuViewBinding.java
  com.financialproject.financialproject.databinding.ActivityMenuViewBinding
+com/financialproject/financialproject/databinding/Fragment3Binding.java
+ com.financialproject.financialproject.databinding.Fragment3Binding
+com/financialproject/financialproject/databinding/AlertDialogAddBinding.java
+ com.financialproject.financialproject.databinding.AlertDialogAddBinding

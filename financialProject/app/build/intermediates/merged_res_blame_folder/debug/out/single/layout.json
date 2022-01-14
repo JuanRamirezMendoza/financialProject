@@ -1,26 +1,38 @@
 [
     {
-        "merged": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_inconming_view.xml",
-        "source": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_inconming_view.xml"
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_2.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_2.xml"
     },
     {
-        "merged": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_menu_view.xml",
-        "source": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_menu_view.xml"
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_2.xml",
-        "source": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_2.xml"
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_menu_view.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_menu_view.xml"
     },
     {
-        "merged": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_3.xml",
-        "source": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_3.xml"
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_4.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_4.xml"
     },
     {
-        "merged": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_1.xml",
-        "source": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_1.xml"
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\alert_dialog_add.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\alert_dialog_add.xml"
     },
     {
-        "merged": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "D:\\Sebastian Ramirez\\Documentos\\AndroidProjects\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_1.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_inconming_view.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\activity_inconming_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_3.xml",
+        "source": "C:\\Users\\BGA072021\\Documents\\Personal\\financialProject\\financialProject\\app\\src\\main\\res\\layout\\fragment_3.xml"
     }
 ]
