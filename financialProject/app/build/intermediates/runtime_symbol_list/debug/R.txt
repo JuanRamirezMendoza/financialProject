@@ -2453,7 +2453,6 @@ int layout fragment_1 0x7f0b0030
 int layout fragment_2 0x7f0b0031
 int layout fragment_3 0x7f0b0032
 int layout fragment_4 0x7f0b0033
-int layout fragment_add 0x7f0b0081
 int layout material_chip_input_combo 0x7f0b0034
 int layout material_clock_display 0x7f0b0035
 int layout material_clock_display_divider 0x7f0b0036

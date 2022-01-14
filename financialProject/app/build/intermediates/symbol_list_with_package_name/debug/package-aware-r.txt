@@ -2454,7 +2454,6 @@ layout fragment_1
 layout fragment_2
 layout fragment_3
 layout fragment_4
-layout fragment_add
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
