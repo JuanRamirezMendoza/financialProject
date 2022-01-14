@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import com.financialproject.financialproject.R;
 import com.google.android.material.bottomappbar.BottomAppBar;
@@ -29,13 +30,18 @@ public final class ActivityMenuViewBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView bottomNavigationView;
 
+  @NonNull
+  public final FragmentContainerView fragmentContainerView;
+
   private ActivityMenuViewBinding(@NonNull CoordinatorLayout rootView,
       @NonNull FloatingActionButton add, @NonNull BottomAppBar bottom,
-      @NonNull BottomNavigationView bottomNavigationView) {
+      @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull FragmentContainerView fragmentContainerView) {
     this.rootView = rootView;
     this.add = add;
     this.bottom = bottom;
     this.bottomNavigationView = bottomNavigationView;
+    this.fragmentContainerView = fragmentContainerView;
   }
 
   @Override
@@ -83,8 +89,14 @@ public final class ActivityMenuViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fragmentContainerView;
+      FragmentContainerView fragmentContainerView = rootView.findViewById(id);
+      if (fragmentContainerView == null) {
+        break missingId;
+      }
+
       return new ActivityMenuViewBinding((CoordinatorLayout) rootView, add, bottom,
-          bottomNavigationView);
+          bottomNavigationView, fragmentContainerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

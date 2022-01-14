@@ -12,4 +12,7 @@
     <string name="safe">SAFE</string>
     <string name="welcome">WELCOME,</string>
     <string name="juan">JUAN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
 </resources>

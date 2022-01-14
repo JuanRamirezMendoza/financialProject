@@ -8,5 +8,7 @@ com/financialproject/financialproject/databinding/Fragment1Binding.java
  com.financialproject.financialproject.databinding.Fragment1Binding
 com/financialproject/financialproject/databinding/Fragment2Binding.java
  com.financialproject.financialproject.databinding.Fragment2Binding
+com/financialproject/financialproject/databinding/Fragment3Binding.java
+ com.financialproject.financialproject.databinding.Fragment3Binding
 com/financialproject/financialproject/databinding/ActivityMenuViewBinding.java
  com.financialproject.financialproject.databinding.ActivityMenuViewBinding
