@@ -65,6 +65,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array types
 attr ConstraintRotate
 attr SharedValue
 attr SharedValueId
@@ -1837,7 +1838,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable in
+drawable in_out
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1871,8 +1872,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable out
 drawable safe
+drawable stats
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1948,6 +1949,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_text
 id alertTitle
 id aligned
 id all
@@ -2068,13 +2070,11 @@ id fixed
 id flip
 id floating
 id forever
-id fragment1
-id fragment2
-id fragment3
-id fragment4
-id fragmentAdd
 id fragmentContainerView
 id fragment_container_view_tag
+id fragment_home
+id fragment_in_out
+id fragment_stats
 id frost
 id ghost_view
 id ghost_view_holder
@@ -2117,6 +2117,7 @@ id line3
 id linear
 id listMode
 id list_item
+id list_items
 id masked
 id match_constraint
 id match_parent
@@ -2211,7 +2212,6 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id placeholder
 id position
 id postLayout
 id progress_circular
@@ -2314,6 +2314,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2339,6 +2340,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id types_edt
 id unchecked
 id uniform
 id unlabeled
@@ -2430,10 +2432,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_inconming_view
 layout activity_main
 layout activity_menu_view
-layout alert_dialog_add
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2450,10 +2450,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_1
-layout fragment_2
-layout fragment_3
-layout fragment_4
+layout dropdown_item
+layout fragment_home
+layout fragment_in_out
+layout fragment_stats
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2563,7 +2563,6 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string add
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
@@ -2573,15 +2572,13 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string error_icon_content_description
-string expenses
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home
 string icon_content_description
-string incoming
+string in_out
 string item_view_role_description
 string juan
 string material_clock_display_divider
@@ -2648,9 +2645,11 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string safe
 string search_menu_title
+string stats
 string status_bar_notification_info_overflow
 string todo
 string welcome
+string xd
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

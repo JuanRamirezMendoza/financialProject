@@ -1,12 +1,15 @@
 <resources>
     <string name="home">HOME</string>
-    <string name="incoming">IN</string>
-    <string name="expenses">EXPENSES</string>
+    <string name="in_out">IN/OUT</string>
     <string name="safe">SAFE</string>
     <string name="welcome">WELCOME,</string>
     <string name="juan">JUAN</string>
     <string name="todo">TODO</string>
-    <string name="add">add</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stats">STATS</string>
+    <string name="xd">XD</string>
+    <string-array name="types">
+        <item>Incoming</item>
+        <item>Expenses</item>
+        <item>Safe</item>
+    </string-array>
 </resources>

@@ -5,8 +5,6 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
-import android.widget.ArrayAdapter
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -35,7 +33,6 @@ class MenuView : AppCompatActivity() {
         window.navigationBarColor = Color.TRANSPARENT
 
         binding.bottomNavigationView.background = null
-        binding.bottomNavigationView.menu.getItem(2).isEnabled = false
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
         val navHostFragment =
@@ -44,14 +41,5 @@ class MenuView : AppCompatActivity() {
 
         bottomNavigationView.setupWithNavController(navController)
 
-        binding.add.setOnClickListener{
-            val builder = AlertDialog.Builder(this)
-            val view = layoutInflater.inflate(R.layout.alert_dialog_add, null)
-
-            builder.setView(view)
-
-            val dialog = builder.create()
-            dialog.show()
-        }
     }
 }

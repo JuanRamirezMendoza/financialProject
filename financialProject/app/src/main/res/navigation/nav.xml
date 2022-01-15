@@ -3,27 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/fragment1">
+    app:startDestination="@id/fragment_home">
 
     <fragment
-        android:id="@+id/fragment1"
+        android:id="@+id/fragment_home"
         android:name="com.financialproject.financialproject.ui.view.fragments.FragmentHome"
-        tools:layout="@layout/fragment_1" />
+        tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/fragment2"
-        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentIncoming"
-        tools:layout="@layout/fragment_2" />
+        android:id="@+id/fragment_in_out"
+        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentInOut"
+        tools:layout="@layout/fragment_in_out" />
     <fragment
-        android:id="@+id/fragment3"
-        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentExpenses"
-        tools:layout="@layout/fragment_3" />
-    <fragment
-        android:id="@+id/fragment4"
-        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentSafe"
-        tools:layout="@layout/fragment_4" />
-
-    <fragment
-        android:id="@+id/fragmentAdd"
-        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentAdd"
-        tools:layout="@layout/fragment_add" />
+        android:id="@+id/fragment_stats"
+        android:name="com.financialproject.financialproject.ui.view.fragments.FragmentStats"
+        tools:layout="@layout/fragment_stats" />
 </navigation>
