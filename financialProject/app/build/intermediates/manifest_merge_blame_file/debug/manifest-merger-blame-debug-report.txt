@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.6.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\094ef38f3eb0576e22950f190096f7a8\core-1.6.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.7.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\6b06e739b0366b1a1dd3a1b10c0f8f29\core-1.7.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:extractNativeLibs="false"
 16        android:icon="@mipmap/ic_launcher"
@@ -56,6 +56,28 @@
 33-->C:\Users\BGA072021\Documents\Personal\financialProject\financialProject\app\src\main\AndroidManifest.xml:22:27-74
 34            </intent-filter>
 35        </activity>
-36    </application>
-37
-38</manifest>
+36
+37        <provider
+37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b44d0d7dcdb364af7296c6ad8a25ed4c\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+38            android:name="androidx.startup.InitializationProvider"
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b44d0d7dcdb364af7296c6ad8a25ed4c\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+39            android:authorities="com.financialproject.financialproject.androidx-startup"
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b44d0d7dcdb364af7296c6ad8a25ed4c\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+40            android:exported="false" >
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b44d0d7dcdb364af7296c6ad8a25ed4c\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+41            <meta-data
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b44d0d7dcdb364af7296c6ad8a25ed4c\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b44d0d7dcdb364af7296c6ad8a25ed4c\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+43                android:value="androidx.startup" />
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\b44d0d7dcdb364af7296c6ad8a25ed4c\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+44            <meta-data
+44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\210374a396b1ff050e8f2e032efbea05\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\210374a396b1ff050e8f2e032efbea05\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+46                android:value="androidx.startup" />
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\BGA072021\.gradle\caches\transforms-2\files-2.1\210374a396b1ff050e8f2e032efbea05\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+47        </provider>
+48    </application>
+49
+50</manifest>

@@ -27,9 +27,9 @@ class FragmentInOut : Fragment() {
             "XD<"
                     + types.size
         )
-        val items = listOf("In", "Design", "Components", "Android")
+        val items = listOf("Incoming", "Expenses", "Safe")
         val adapter = ArrayAdapter(requireContext(), R.layout.dropdown_item, items)
-        (binding.typesEdt as? AutoCompleteTextView)?.setAdapter(adapter)
+        (binding.kindEdt as? AutoCompleteTextView)?.setAdapter(adapter)
 
         return binding.root
 

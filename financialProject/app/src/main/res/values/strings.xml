@@ -7,6 +7,10 @@
     <string name="todo">TODO</string>
     <string name="stats">STATS</string>
     <string name="xd">XD</string>
+    <string name="kind_of_move">Kind of move</string>
+    <string name="description">Description</string>
+    <string name="ok">OK</string>
+    <string name="concept">Concept</string>
     <string-array name="types">
         <item>Incoming</item>
         <item>Expenses</item>
