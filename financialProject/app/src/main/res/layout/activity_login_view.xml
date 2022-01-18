@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModelLogin"
+            type="com.financialproject.financialproject.ui.viewmodel.LoginViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.view.RegisterView">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="@string/email"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModelLogin.email}"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outlined_text_email"
+            android:layout_centerInParent="true"
+            android:hint="@string/password"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModelLogin.password}"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outlined_text_password"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/white"
+            android:onClick="@{()-> viewModelLogin.login()}"
+            android:text="@string/login"
+            android:textColor="@color/items"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/register_button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/white"
+            android:onClick="@{()-> viewModelLogin.register()}"
+            android:text="@string/register"
+            android:textColor="@color/items"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</layout>
