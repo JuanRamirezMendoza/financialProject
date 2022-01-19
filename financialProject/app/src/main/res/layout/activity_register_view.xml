@@ -15,12 +15,44 @@
         android:layout_width="match_parent"
         android:background="@color/white"
         android:layout_height="match_parent"
+        android:gravity="center"
         tools:context=".ui.view.RegisterView">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/image"
+            android:layout_marginBottom="50dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/image"
+            android:hint="@string/name"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModelRegister.name}"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outlined_text_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="300dp"
+            android:layout_below="@id/outlined_text_name"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:hint="@string/email"
@@ -60,18 +92,40 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_password_conffirm"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outlined_text_password"
+            android:layout_centerInParent="true"
+            android:hint="@string/password_confirm"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModelRegister.passwordConfirm}"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/register_button"
             style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/outlined_text_password"
+            android:layout_below="@id/outlined_text_password_conffirm"
             android:layout_centerInParent="true"
             android:layout_marginTop="50dp"
             android:backgroundTint="@color/white"
             android:onClick="@{()-> viewModelRegister.register()}"
             android:text="@string/register"
             android:textColor="@color/items"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
     </RelativeLayout>
 </layout>

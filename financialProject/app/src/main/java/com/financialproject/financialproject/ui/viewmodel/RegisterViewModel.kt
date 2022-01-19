@@ -6,21 +6,24 @@ import com.financialproject.financialproject.data.model.RegisterModel
 
 class RegisterViewModel : BaseViewModel(){
 
+    val name: MutableLiveData<String> = MutableLiveData("")
     val email: MutableLiveData<String> = MutableLiveData("")
     val password: MutableLiveData<String> = MutableLiveData("")
     val passwordConfirm: MutableLiveData<String> = MutableLiveData("")
 
     fun register() {
-        Log.e("entro","xD")
+
+        val name = name.value ?: ""
         val emailRegister = email.value ?: ""
         val passwordRegister = password.value ?: ""
-        //val passwordConfirmRegister = password.value ?: ""
+        val passwordConfirm = password.value ?: ""
         println(emailRegister)
         println(passwordRegister)
         try {
-            if (emailRegister.isEmpty()
+            if (name.isEmpty()
+                ||emailRegister.isEmpty()
                 || passwordRegister.isEmpty()
-                //|| passwordConfirmRegister.isEmpty()
+                || passwordConfirm.isEmpty()
             ) error.value = ERROR.EMPTY_FIELDS
             else {
                 val model = RegisterModel(emailRegister, passwordRegister)
