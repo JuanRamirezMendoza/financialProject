@@ -17,12 +17,24 @@
         android:background="@color/white"
         tools:context=".ui.view.RegisterView">
 
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/image"
+            android:layout_marginBottom="50dp"
+            android:contentDescription="@string/todo" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outlined_text_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
+            android:layout_below="@+id/image"
             android:hint="@string/email"
             android:textColorHint="@color/items"
             app:boxBackgroundColor="@color/white"
@@ -74,17 +86,28 @@
             android:textColor="@color/items"
             android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/register_button"
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_width="150dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/login_button"
-            android:layout_centerInParent="true"
-            android:backgroundTint="@color/white"
+            android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text_no_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/you_do_not_have_an_account_"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/button_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
             android:onClick="@{()-> viewModelLogin.register()}"
-            android:text="@string/register"
-            android:textColor="@color/items"
-            android:textSize="24sp" />
+            android:text="@string/sign_up"
+            android:textColor="@color/items" />
+        </LinearLayout>
     </RelativeLayout>
 </layout>

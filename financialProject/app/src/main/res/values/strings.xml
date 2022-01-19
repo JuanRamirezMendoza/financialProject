@@ -17,6 +17,9 @@
     <string name="login">Login</string>
     <string name="name">Name</string>
     <string name="password_confirm">Password confirm</string>
+    <string name="you_do_not_have_an_account_">you don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_out">SignOut</string>
     <string-array name="types">
         <item>Incoming</item>
         <item>Expenses</item>

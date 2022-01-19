@@ -1,5 +1,7 @@
 
-‰
-Yapp/src/main/java/com/financialproject/financialproject/ui/view/fragments/FragmentHome.kt,d\7\d786d0ae6548473b91d4618c35c8e6418f0557bb
-Š
-Zapp/src/main/java/com/financialproject/financialproject/ui/view/fragments/FragmentStats.kt,4\0\40518316cb2214faa97a9002a196c97becce8ed2
+H
+app/google-services.json,f\d\fd8d34b142d02ec743a8efefefd2c097961666e9
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164

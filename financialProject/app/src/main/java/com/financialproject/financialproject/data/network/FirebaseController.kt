@@ -9,6 +9,10 @@ class FirebaseController {
 
     private var instance: FirebaseAuth = FirebaseAuth.getInstance()
 
+    fun hasSession(): Boolean {
+        return instance.currentUser != null
+    }
+
     fun register(model: RegisterModel, success: () -> Unit, error: () -> Unit) {
         instance.createUserWithEmailAndPassword(model.email, model.password).addOnCompleteListener {
             if (it.isSuccessful) {
@@ -27,5 +31,10 @@ class FirebaseController {
                 error.invoke()
             }
         }
+    }
+
+    fun signOut(success: () -> Unit) {
+        instance.signOut()
+        success.invoke()
     }
 }

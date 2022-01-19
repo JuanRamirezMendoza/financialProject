@@ -28,13 +28,6 @@ class RegisterView : AppCompatActivity() {
         binding.lifecycleOwner = this
         binding.viewModelRegister = registerViewModel
 
-        // In Activity's onCreate() for instance
-        val w: Window = window
-        w.setFlags(
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-        )
-
         registerViewModel.error.observe(this, {
             when (it) {
                 ERROR.EMPTY_FIELDS -> {

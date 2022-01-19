@@ -2,18 +2,17 @@ package com.financialproject.financialproject.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import com.financialproject.financialproject.data.model.LoginModel
-import com.google.android.gms.common.config.GservicesValue.value
 
-class LoginViewModel : BaseViewModel(){
+class LoginViewModel : BaseViewModel() {
 
     val email: MutableLiveData<String> = MutableLiveData("")
     val password: MutableLiveData<String> = MutableLiveData("")
 
-    /*init {
+    init {
         if (firebaseController.hasSession()){
             navigation.value = NAVIGATION.GO_MAIN_VIEW
         }
-    }*/
+    }
 
     fun login() {
         val emailLogin = email.value ?: ""
@@ -34,6 +33,7 @@ class LoginViewModel : BaseViewModel(){
             e.printStackTrace()
         }
     }
+
     fun register() {
         navigation.value = NAVIGATION.GO_REGISTER_VIEW
     }

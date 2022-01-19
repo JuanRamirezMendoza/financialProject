@@ -29,17 +29,6 @@ class LoginView : AppCompatActivity() {
         binding.lifecycleOwner = this
         binding.viewModelLogin = loginViewModel
 
-        // In Activity's onCreate() for instance
-        val w: Window = window
-        w.setFlags(
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-        )
-
-        /*binding.helloWorld.setOnClickListener{
-            val intent = Intent(this, MenuView::class.java)
-            startActivity(intent)
-        }*/
 
         loginViewModel.error.observe(this, {
             when (it) {
