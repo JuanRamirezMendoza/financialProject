@@ -1,163 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_vertical"
-    tools:context=".ui.view.fragments.FragmentInOut">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/add_text"
+    <data>
+
+        <variable
+            name="viewModelFragmentInOut"
+            type="com.financialproject.financialproject.ui.viewmodel.FragmenteInOutViewModel" />
+    </data>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:gravity="center_horizontal"
-        android:text="@string/in_out"
-        android:textColor="@color/red"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        tools:context=".ui.view.fragments.FragmentInOut">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/list_items_kind"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/add_text"
-        android:layout_centerInParent="true"
-        android:textColorHint="@color/items"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/items"
-        app:endIconTint="@color/items">
-
-        <AutoCompleteTextView
-            android:id="@+id/kind_edt"
+        <TextView
+            android:id="@+id/add_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            android:text="@string/kind_of_move"
-            android:textColor="@color/black"
-            tools:ignore="LabelFor" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginBottom="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/in_out"
+            android:textColor="@color/items"
+            tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField_concept"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/list_items_kind"
-        android:layout_centerInParent="true"
-        android:hint="@string/concept"
-        android:textColorHint="@color/items"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/items"
-        app:endIconTint="@color/items"
-        app:hintTextColor="@color/items">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/concept_text"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/list_items_kind"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/black" />
+            android:layout_below="@+id/add_text"
+            android:layout_centerInParent="true"
+            android:textColorHint="@color/items"
+            android:hint="@string/kind_of_move"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <AutoCompleteTextView
+                android:id="@+id/kind_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="@={viewModelFragmentInOut.kindOfMove}"
+                android:textColor="@color/items"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/outlinedTextField_concept"
-        android:layout_centerInParent="true"
-        android:hint="@string/xd"
-        android:textColorHint="@color/items"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/items"
-        app:endIconTint="@color/items"
-        app:hintTextColor="@color/items">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField_concept"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/black" />
+            android:layout_below="@id/list_items_kind"
+            android:layout_centerInParent="true"
+            android:hint="@string/concept"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/concept_text"
+                android:layout_width="match_parent"
+                android:text="@={viewModelFragmentInOut.concept}"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField3"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/outlinedTextField2"
-        android:layout_centerInParent="true"
-        android:hint="@string/xd"
-        android:textColorHint="@color/items"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/items"
-        app:endIconTint="@color/items"
-        app:hintTextColor="@color/items">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_field_price"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/black" />
+            android:layout_below="@id/outlinedTextField_concept"
+            android:layout_centerInParent="true"
+            android:hint="@string/price"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModelFragmentInOut.price}"
+                android:textColor="@color/black" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/list_items_description"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/outlinedTextField3"
-        android:layout_centerInParent="true"
-        android:textColorHint="@color/items"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/items"
-        app:endIconTint="@color/items">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <AutoCompleteTextView
-            android:id="@+id/description_edt"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_field_date"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            android:text="@string/description"
-            android:textColor="@color/black"
-            tools:ignore="LabelFor" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_below="@id/outlined_text_field_price"
+            android:layout_centerInParent="true"
+            android:hint="@string/date"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField4"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/list_items_description"
-        android:layout_centerInParent="true"
-        android:hint="@string/xd"
-        android:textColorHint="@color/items"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/items"
-        app:endIconTint="@color/items"
-        app:hintTextColor="@color/items">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModelFragmentInOut.date}"
+                android:textColor="@color/black" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/list_items_description"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:lines="4"
-            android:maxLines="4"
-            android:textColor="@color/black" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_below="@+id/outlined_text_field_date"
+            android:layout_centerInParent="true"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            android:hint="@string/description"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
 
-    <Button
-        android:id="@+id/elevatedButton"
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/outlinedTextField4"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/white"
-        android:text="@string/ok"
-        android:textColor="@color/items"
-        android:textSize="24sp" />
+            <AutoCompleteTextView
+                android:id="@+id/description_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="@={viewModelFragmentInOut.description}"
+                android:textColor="@color/items"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-</RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlined_text_field_info"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_items_description"
+            android:layout_centerInParent="true"
+            android:hint="@string/info"
+            android:textColorHint="@color/items"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/items"
+            app:endIconTint="@color/items"
+            app:hintTextColor="@color/items">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModelFragmentInOut.info}"
+                android:lines="4"
+                android:maxLines="4"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/elevatedButton"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outlined_text_field_info"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/white"
+            android:onClick="@{()-> viewModelFragmentInOut.ok()}"
+            android:text="@string/ok"
+            android:textColor="@color/items"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</layout>

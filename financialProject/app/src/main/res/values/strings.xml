@@ -20,9 +20,21 @@
     <string name="you_do_not_have_an_account_">you don\'t have an account?</string>
     <string name="sign_up">Sign up</string>
     <string name="sign_out">SignOut</string>
-    <string-array name="types">
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="price">Price</string>
+    <string name="date">Date</string>
+    <string name="info">Info</string>
+    <string-array name="types_kind_move">
         <item>Incoming</item>
         <item>Expenses</item>
         <item>Safe</item>
+    </string-array>
+    <string-array name="types_description">
+        <item>Transport</item>
+        <item>Food</item>
+        <item>Clothes</item>
+        <item>Market</item>
+        <item>Other Stuff</item>
     </string-array>
 </resources>

@@ -22,14 +22,13 @@ class FragmentInOut : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentInOutBinding.inflate(inflater, container, false)
 
-        val types = resources.getStringArray(R.array.types)
-        println(
-            "XD<"
-                    + types.size
-        )
-        val items = listOf("Incoming", "Expenses", "Safe")
-        val adapter = ArrayAdapter(requireContext(), R.layout.dropdown_item, items)
-        (binding.kindEdt as? AutoCompleteTextView)?.setAdapter(adapter)
+        val itemsKindMove = listOf("Incoming", "Expenses", "Safe")
+        val adapterKindMove = ArrayAdapter(requireContext(), R.layout.dropdown_item, itemsKindMove)
+        (binding.kindEdt as? AutoCompleteTextView)?.setAdapter(adapterKindMove)
+
+        val itemsDescription = listOf("Transport", "Food", "Clothes","Market","Other Stuff")
+        val adapterDescription = ArrayAdapter(requireContext(), R.layout.dropdown_item_description, itemsDescription)
+        (binding.descriptionEdt as? AutoCompleteTextView)?.setAdapter(adapterDescription)
 
         return binding.root
 

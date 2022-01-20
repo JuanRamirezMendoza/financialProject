@@ -1,13 +1,21 @@
 package com.financialproject.financialproject.data.network
 
+import android.widget.Toast
+import com.financialproject.financialproject.data.model.FragmentInOutModel
+import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.data.model.LoginModel
 import com.financialproject.financialproject.data.model.RegisterModel
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 
 class FirebaseController {
 
     private var instance: FirebaseAuth = FirebaseAuth.getInstance()
+    val db = Firebase.firestore
+    val collection = db.collection("inOut")
 
     fun hasSession(): Boolean {
         return instance.currentUser != null
@@ -36,5 +44,20 @@ class FirebaseController {
     fun signOut(success: () -> Unit) {
         instance.signOut()
         success.invoke()
+    }
+
+    fun registerInOut(model: FragmentInOutModel,  success: () -> Unit, error: () -> Unit) {
+        val inOut = InOut(
+            firebaseId = "",
+            model.kindOfMove,
+            model.concept,
+            model.price,
+            model.date,
+            model.description,
+            model.info
+        )
+        collection.add(inOut).addOnSuccessListener {
+            success.invoke()
+        }
     }
 }
