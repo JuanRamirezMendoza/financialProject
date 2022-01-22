@@ -13,7 +13,6 @@ class FragmenteInOutViewModel : BaseViewModel() {
     val date: MutableLiveData<String> = MutableLiveData("")
     val description: MutableLiveData<String> = MutableLiveData("")
     val info: MutableLiveData<String> = MutableLiveData("")
-    val email = Firebase.auth.currentUser?.email
 
     fun ok() {
         val kindOfMoveOk = kindOfMove.value ?: ""
@@ -33,12 +32,13 @@ class FragmenteInOutViewModel : BaseViewModel() {
             ) error.value = ERROR.EMPTY_FIELDS
             else {
                 val model = FragmentInOutModel(
-                    kindOfMove.toString(),
-                    concept.toString(),
-                    price.toString(),
-                    date.toString(),
-                    description.toString(),
-                    info.toString()
+                    Firebase.auth.currentUser?.email.toString(),
+                    kindOfMoveOk,
+                    concepteOk,
+                    priceOk,
+                    dateOk,
+                    descriptionOk,
+                    infoOk
                 )
                 model.registerInOut({
                     success.value = SUCCESS.REGISTER_SUCCES

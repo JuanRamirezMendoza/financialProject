@@ -4,6 +4,7 @@ import com.financialproject.financialproject.data.network.FirebaseController
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
 
 data class FragmentInOutModel(
+    val email: String,
     val kindOfMove: String,
     val concept: String,
     val price: String,
