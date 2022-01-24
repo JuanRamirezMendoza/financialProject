@@ -1,34 +1,37 @@
 package com.financialproject.financialproject.ui.view.fragments
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.financialproject.financialproject.R
 import com.financialproject.financialproject.data.extensionfunctions.toast
 import com.financialproject.financialproject.databinding.FragmentInOutBinding
+import com.financialproject.financialproject.ui.view.MenuView
+import com.financialproject.financialproject.ui.viewmodel.ERROR
 import com.financialproject.financialproject.ui.viewmodel.FragmenteInOutViewModel
+import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
 
 class FragmentInOut : Fragment() {
 
     private lateinit var fragmenteInOutViewModel: FragmenteInOutViewModel
-    private var _binding: FragmentInOutBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentInOutBinding
 
+    @SuppressLint("FragmentLiveDataObserve")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
-        _binding = FragmentInOutBinding.inflate(inflater, container, false)
-
         fragmenteInOutViewModel = ViewModelProvider(this)[FragmenteInOutViewModel::class.java]
-
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_in_out, container, false)
         binding.viewModelFragmentInOut = fragmenteInOutViewModel
         binding.lifecycleOwner = this
 
@@ -41,14 +44,33 @@ class FragmentInOut : Fragment() {
             ArrayAdapter(requireContext(), R.layout.dropdown_item_description, itemsDescription)
         (binding.descriptionEdt as? AutoCompleteTextView)?.setAdapter(adapterDescription)
 
-        fragmenteInOutViewModel.success.observe(activity, {
-                when (it) {
-                    SUCCESS.LOG_OUT_SUCCESS -> {
-                        toast("sesion cerrada correctamente")
-                    }
+        fragmenteInOutViewModel.success.observe(this, {
+            when (it) {
+                SUCCESS.REGISTER_SUCCES -> {
+                    toast("Register OK")
                 }
             }
-        )
+        })
+
+        fragmenteInOutViewModel.error.observe(this, {
+            when (it) {
+                ERROR.EMPTY_FIELDS -> {
+                    toast("Fill all fields")
+                }
+                ERROR.COULD_NOT_ADD -> {
+                    toast("Could not add register")
+                }
+            }
+        })
+
+        fragmenteInOutViewModel.navigation.observe(this, {
+            when (it) {
+                NAVIGATION.GO_MAIN_VIEW -> {
+                    val intent = Intent(context, MenuView::class.java)
+                    context?.startActivity(intent)
+                }
+            }
+        })
         return binding.root
 
     }

@@ -13,7 +13,8 @@ open class BaseViewModel : ViewModel() {
 
 enum class ERROR{
     EMPTY_FIELDS,
-    WRONG_CREDENTIALS
+    WRONG_CREDENTIALS,
+    COULD_NOT_ADD
 }
 
 enum class SUCCESS{

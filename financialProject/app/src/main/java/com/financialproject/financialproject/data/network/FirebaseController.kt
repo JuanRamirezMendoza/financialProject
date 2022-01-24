@@ -13,7 +13,7 @@ class FirebaseController {
 
     private var instance: FirebaseAuth = FirebaseAuth.getInstance()
     val db = Firebase.firestore
-    val collection = db.collection("inOut")
+    private val collection = db.collection("inOut")
 
     fun hasSession(): Boolean {
         return instance.currentUser != null
@@ -47,13 +47,13 @@ class FirebaseController {
     fun registerInOut(model: FragmentInOutModel, success: () -> Unit, error: () -> Unit) {
         val inOut = InOut(
             email = model.email,
-            firebaseId = "",
             kindOfMove = model.kindOfMove,
             concept = model.concept,
             price = model.price,
             date = model.date,
             description = model.description,
-            info = model.info
+            info = model.info,
+            firebaseId = ""
         )
         collection.add(inOut).addOnSuccessListener {
             success.invoke()

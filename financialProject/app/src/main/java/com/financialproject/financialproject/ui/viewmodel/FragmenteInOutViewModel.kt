@@ -16,7 +16,7 @@ class FragmenteInOutViewModel : BaseViewModel() {
 
     fun ok() {
         val kindOfMoveOk = kindOfMove.value ?: ""
-        val concepteOk = concept.value ?: ""
+        val conceptOk = concept.value ?: ""
         val priceOk = price.value ?: ""
         val dateOk = date.value ?: ""
         val descriptionOk = description.value ?: ""
@@ -24,7 +24,7 @@ class FragmenteInOutViewModel : BaseViewModel() {
 
         try {
             if (kindOfMoveOk.isEmpty()
-                || concepteOk.isEmpty()
+                || conceptOk.isEmpty()
                 || priceOk.isEmpty()
                 || dateOk.isEmpty()
                 || descriptionOk.isEmpty()
@@ -34,7 +34,7 @@ class FragmenteInOutViewModel : BaseViewModel() {
                 val model = FragmentInOutModel(
                     Firebase.auth.currentUser?.email.toString(),
                     kindOfMoveOk,
-                    concepteOk,
+                    conceptOk,
                     priceOk,
                     dateOk,
                     descriptionOk,
@@ -43,7 +43,7 @@ class FragmenteInOutViewModel : BaseViewModel() {
                 model.registerInOut({
                     success.value = SUCCESS.REGISTER_SUCCES
                 }, {
-                    error.value = ERROR.EMPTY_FIELDS
+                    error.value = ERROR.COULD_NOT_ADD
                 })
             }
         } catch (e: Exception) {
