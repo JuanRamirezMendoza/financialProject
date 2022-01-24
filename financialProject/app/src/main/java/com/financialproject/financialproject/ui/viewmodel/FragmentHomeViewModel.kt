@@ -11,4 +11,10 @@ class FragmentHomeViewModel : BaseViewModel() {
             navigation.value = NAVIGATION.GO_LOGIN_VIEW
         }
     }
+
+    fun listInOut(){
+        model.listInOut{
+            success.value = SUCCESS.LIST_IN_OUT
+        }
+    }
 }

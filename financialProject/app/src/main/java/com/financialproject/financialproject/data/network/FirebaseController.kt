@@ -5,6 +5,7 @@ import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.data.model.LoginModel
 import com.financialproject.financialproject.data.model.RegisterModel
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -13,6 +14,7 @@ class FirebaseController {
 
     private var instance: FirebaseAuth = FirebaseAuth.getInstance()
     val db = Firebase.firestore
+    val email = Firebase.auth.currentUser?.email
     private val collection = db.collection("inOut")
 
     fun hasSession(): Boolean {
@@ -61,5 +63,32 @@ class FirebaseController {
             e.printStackTrace()
             error.invoke()
         }
+    }
+
+    fun listInOut(success: () -> Unit) {
+        db.collection("inOut").whereEqualTo("email", email).get()
+            .addOnSuccessListener { documents ->
+                val inOut = mutableListOf<InOut>()
+                for (document in documents) {
+                    val kindOfMove = document.data["kindOfMove"].toString()
+                    val concept = document.data["concept"].toString()
+                    val price = document.data["price"].toString()
+                    val date = document.data["date"].toString()
+                    val description = document.data["description"].toString()
+                    val info = document.data["info"].toString()
+                    val inOutVal = InOut(
+                        "",
+                        document.id,
+                        kindOfMove,
+                        concept,
+                        price,
+                        date,
+                        description,
+                        info
+                    )
+                    inOut.add(inOutVal)
+                    success.invoke()
+                }
+            }
     }
 }

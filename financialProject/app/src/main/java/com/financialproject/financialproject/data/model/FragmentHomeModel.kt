@@ -7,4 +7,8 @@ class FragmentHomeModel() {
     fun signOut(success: () -> Unit){
         firebaseController.signOut(success)
     }
+
+    fun listInOut(success: () -> Unit){
+        firebaseController.listInOut(success)
+    }
 }

@@ -20,7 +20,8 @@ enum class ERROR{
 enum class SUCCESS{
     LOGIN_SUCCES,
     REGISTER_SUCCES,
-    LOG_OUT_SUCCESS
+    LOG_OUT_SUCCESS,
+    LIST_IN_OUT
 }
 
 enum class NAVIGATION{

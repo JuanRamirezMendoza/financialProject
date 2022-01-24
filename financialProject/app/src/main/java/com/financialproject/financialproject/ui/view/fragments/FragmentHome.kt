@@ -6,13 +6,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.financialproject.financialproject.R
 import com.financialproject.financialproject.data.extensionfunctions.toast
+import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.FragmentHomeBinding
 import com.financialproject.financialproject.ui.view.LoginView
+import com.financialproject.financialproject.ui.view.adapter.MenuAdapter
 import com.financialproject.financialproject.ui.viewmodel.FragmentHomeViewModel
 import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
@@ -28,6 +32,9 @@ class FragmentHome : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
 
+        //val recyclerView = binding.recyclerView
+        val inOut = mutableListOf<InOut>()
+
         fragmentHomeViewModel = ViewModelProvider(this)[FragmentHomeViewModel::class.java]
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         binding.viewModelFragmentHome = fragmentHomeViewModel
@@ -38,6 +45,12 @@ class FragmentHome : Fragment() {
                 SUCCESS.LOG_OUT_SUCCESS -> {
                     toast("sesion cerrada correctamente")
                 }
+                /*SUCCESS.LIST_IN_OUT -> {
+                    val adapter =
+                        activity?.let { it1 -> MenuAdapter(it1, inOut, AppCompatActivity()) }
+                    recyclerView.adapter = adapter
+                    recyclerView.layoutManager = LinearLayoutManager(context)
+                }*/
             }
         })
 
@@ -49,6 +62,7 @@ class FragmentHome : Fragment() {
                 }
             }
         })
+
 
         // Inflate the layout for this fragment
         return binding.root

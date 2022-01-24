@@ -1,7 +1,6 @@
 package com.financialproject.financialproject.data.model
 
 import com.financialproject.financialproject.data.network.FirebaseController
-import com.financialproject.financialproject.ui.viewmodel.SUCCESS
 
 data class FragmentInOutModel(
     val email: String,
