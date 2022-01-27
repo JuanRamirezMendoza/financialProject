@@ -34,8 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/add_text"
             android:layout_centerInParent="true"
-            android:textColorHint="@color/items"
             android:hint="@string/kind_of_move"
+            android:textColorHint="@color/items"
             app:boxBackgroundColor="@color/white"
             app:boxStrokeColor="@color/items"
             app:endIconTint="@color/items"
@@ -68,8 +68,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/concept_text"
                 android:layout_width="match_parent"
-                android:text="@={viewModelFragmentInOut.concept}"
                 android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:text="@={viewModelFragmentInOut.concept}"
                 android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -91,6 +92,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:text="@={viewModelFragmentInOut.price}"
                 android:textColor="@color/black" />
 
@@ -113,6 +115,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="date"
                 android:text="@={viewModelFragmentInOut.date}"
                 android:textColor="@color/black" />
 
@@ -125,9 +128,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/outlined_text_field_date"
             android:layout_centerInParent="true"
+            android:hint="@string/description"
             android:textColorHint="@color/items"
             app:boxBackgroundColor="@color/white"
-            android:hint="@string/description"
             app:boxStrokeColor="@color/items"
             app:endIconTint="@color/items"
             app:hintTextColor="@color/items">
@@ -159,9 +162,10 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@={viewModelFragmentInOut.info}"
+                android:inputType="textCapWords"
                 android:lines="4"
                 android:maxLines="4"
+                android:text="@={viewModelFragmentInOut.info}"
                 android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 

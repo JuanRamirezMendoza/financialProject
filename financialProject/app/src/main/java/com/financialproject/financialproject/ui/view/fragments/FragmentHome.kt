@@ -29,7 +29,7 @@ class FragmentHome : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
 
         fragmentHomeViewModel = ViewModelProvider(this)[FragmentHomeViewModel::class.java]
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
@@ -51,9 +51,6 @@ class FragmentHome : Fragment() {
                 SUCCESS.LOG_OUT_SUCCESS -> {
                     toast("sesion cerrada correctamente")
                 }
-                /*SUCCESS.LIST_IN_OUT -> {
-
-                }*/
             }
         })
 
@@ -65,8 +62,6 @@ class FragmentHome : Fragment() {
                 }
             }
         })
-
-        //fragmentHomeViewModel.listInOut()
 
         // Inflate the layout for this fragment
         return binding.root
