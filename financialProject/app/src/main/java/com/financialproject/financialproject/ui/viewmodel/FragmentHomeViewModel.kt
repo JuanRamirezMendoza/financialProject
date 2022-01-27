@@ -3,8 +3,9 @@ package com.financialproject.financialproject.ui.viewmodel
 import com.financialproject.financialproject.data.model.FragmentHomeModel
 
 class FragmentHomeViewModel : BaseViewModel() {
-
     private val model = FragmentHomeModel()
+
+    fun listInOut2() = model.listInOut1()
 
     fun logOut() {
         model.signOut {
@@ -13,8 +14,6 @@ class FragmentHomeViewModel : BaseViewModel() {
     }
 
     fun listInOut(){
-        model.listInOut{
-            success.value = SUCCESS.LIST_IN_OUT
-        }
+        model.listInOut()
     }
 }

@@ -6,6 +6,15 @@
     android:background="#FFFFFF"
     android:orientation="horizontal">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav"/>
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom"
         android:backgroundTint="@color/white"
@@ -25,12 +34,5 @@
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

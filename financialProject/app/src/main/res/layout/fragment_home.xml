@@ -71,11 +71,11 @@
             android:backgroundTint="@color/white" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
+            android:id="@+id/recycler_view_history"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/cardView"
-            android:paddingStart="16dp"
+            android:padding="10dp"
             tools:ignore="RtlSymmetry" />
 
     </RelativeLayout>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <com.google.android.material.card.MaterialCardView
@@ -14,6 +14,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
         android:elevation="8dp"
         app:cardCornerRadius="8dp">
 
@@ -57,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/xd"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:textColor="?android:attr/textColorSecondary"
+                    android:textColor="@color/back"
                     android:textSize="11sp" />
             </LinearLayout>
 
@@ -75,6 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/xd"
+                    android:textAlignment="textEnd"
                     android:textAppearance="?attr/textAppearanceTitleMedium"
                     android:textSize="16sp" />
 
@@ -84,8 +86,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/xd"
+                    android:textAlignment="textEnd"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:textColor="?android:attr/textColorSecondary"
+                    android:textColor="@color/back"
                     android:textSize="11sp" />
             </LinearLayout>
 

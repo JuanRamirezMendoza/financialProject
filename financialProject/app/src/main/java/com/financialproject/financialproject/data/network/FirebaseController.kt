@@ -1,5 +1,6 @@
 package com.financialproject.financialproject.data.network
 
+import androidx.lifecycle.MutableLiveData
 import com.financialproject.financialproject.data.model.FragmentInOutModel
 import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.data.model.LoginModel
@@ -12,8 +13,9 @@ import com.google.firebase.ktx.Firebase
 
 class FirebaseController {
 
+    val listIn: MutableLiveData<MutableList<InOut>> = MutableLiveData(mutableListOf())
     private var instance: FirebaseAuth = FirebaseAuth.getInstance()
-    val db = Firebase.firestore
+    private val db = Firebase.firestore
     val email = Firebase.auth.currentUser?.email
     private val collection = db.collection("inOut")
 
@@ -65,10 +67,10 @@ class FirebaseController {
         }
     }
 
-    fun listInOut(success: () -> Unit) {
+    fun listInOut() {
         db.collection("inOut").whereEqualTo("email", email).get()
             .addOnSuccessListener { documents ->
-                val inOut = mutableListOf<InOut>()
+                val inOuts = mutableListOf<InOut>()
                 for (document in documents) {
                     val kindOfMove = document.data["kindOfMove"].toString()
                     val concept = document.data["concept"].toString()
@@ -76,19 +78,20 @@ class FirebaseController {
                     val date = document.data["date"].toString()
                     val description = document.data["description"].toString()
                     val info = document.data["info"].toString()
-                    val inOutVal = InOut(
-                        "",
-                        document.id,
-                        kindOfMove,
-                        concept,
-                        price,
-                        date,
-                        description,
-                        info
+                    inOuts.add(
+                        InOut(
+                            "",
+                            document.id,
+                            kindOfMove,
+                            concept,
+                            price,
+                            date,
+                            description,
+                            info
+                        )
                     )
-                    inOut.add(inOutVal)
-                    success.invoke()
                 }
+                listIn.value = inOuts
             }
     }
 }

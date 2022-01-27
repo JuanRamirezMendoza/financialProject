@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -32,13 +31,20 @@ class FragmentHome : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
 
-        //val recyclerView = binding.recyclerView
-        val inOut = mutableListOf<InOut>()
-
         fragmentHomeViewModel = ViewModelProvider(this)[FragmentHomeViewModel::class.java]
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         binding.viewModelFragmentHome = fragmentHomeViewModel
         binding.lifecycleOwner = this
+
+        val adapter = MenuAdapter(context)
+        binding.recyclerViewHistory.adapter = adapter
+        binding.recyclerViewHistory.layoutManager = LinearLayoutManager(context)
+
+        fragmentHomeViewModel.listInOut()
+
+        fragmentHomeViewModel.listInOut2().observe(this,{
+            adapter.addData(it.toList())
+        })
 
         fragmentHomeViewModel.success.observe(this, {
             when (it) {
@@ -46,10 +52,7 @@ class FragmentHome : Fragment() {
                     toast("sesion cerrada correctamente")
                 }
                 /*SUCCESS.LIST_IN_OUT -> {
-                    val adapter =
-                        activity?.let { it1 -> MenuAdapter(it1, inOut, AppCompatActivity()) }
-                    recyclerView.adapter = adapter
-                    recyclerView.layoutManager = LinearLayoutManager(context)
+
                 }*/
             }
         })
@@ -63,6 +66,7 @@ class FragmentHome : Fragment() {
             }
         })
 
+        //fragmentHomeViewModel.listInOut()
 
         // Inflate the layout for this fragment
         return binding.root
