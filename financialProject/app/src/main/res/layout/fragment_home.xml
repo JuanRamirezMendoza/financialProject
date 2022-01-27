@@ -146,7 +146,7 @@
                             android:id="@+id/incoming_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/xd"
+                            android:text="@string/_1_000_000"
                             android:textAppearance="?attr/textAppearanceBodyMedium"
                             android:textColor="@color/back"
                             android:textSize="16sp" />
@@ -173,7 +173,7 @@
                             android:id="@+id/outcome_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/xd"
+                            android:text="@string/_1_000_000"
                             android:textAppearance="?attr/textAppearanceBodyMedium"
                             android:textColor="@color/back"
                             android:textSize="16sp" />
@@ -199,7 +199,7 @@
                             android:id="@+id/kind_of_move"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/xd"
+                            android:text="@string/_1_000_000"
                             android:textAppearance="?attr/textAppearanceBodyMedium"
                             android:textColor="@color/back"
                             android:textSize="16sp" />

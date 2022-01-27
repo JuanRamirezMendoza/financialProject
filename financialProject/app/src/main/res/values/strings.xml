@@ -28,6 +28,7 @@
     <string name="total_incoming">TOTAL INCOMING  </string>
     <string name="total_outcome">TOTAL OUTCOME  </string>
     <string name="total_in_wallet">TOTAL IN WALLET  </string>
+    <string name="_1_000_000">1\'000.000</string>
     <string-array name="types_kind_move">
         <item>Incoming</item>
         <item>Expenses</item>
