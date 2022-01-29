@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.financialproject.financialproject.R
+import com.financialproject.financialproject.data.extensionfunctions.count
 import com.financialproject.financialproject.data.extensionfunctions.toast
 import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.FragmentHomeBinding
@@ -42,8 +43,9 @@ class FragmentHome : Fragment() {
 
         fragmentHomeViewModel.listInOut()
 
-        fragmentHomeViewModel.listInOut2().observe(this,{
-            adapter.addData(it.toList())
+        fragmentHomeViewModel.listInOut2().observe(this, { list ->
+            binding.incomingPrice.text = list.count("Incoming")
+            adapter.addData(list.toList())
         })
 
         fragmentHomeViewModel.success.observe(this, {

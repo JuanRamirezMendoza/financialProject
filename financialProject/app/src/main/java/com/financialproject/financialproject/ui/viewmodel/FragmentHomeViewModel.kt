@@ -16,4 +16,8 @@ class FragmentHomeViewModel : BaseViewModel() {
     fun listInOut(){
         model.listInOut()
     }
+
+    fun sumIncoming(){
+        model.listInOut1()
+    }
 }

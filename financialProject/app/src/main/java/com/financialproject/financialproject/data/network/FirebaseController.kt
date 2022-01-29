@@ -1,5 +1,7 @@
 package com.financialproject.financialproject.data.network
 
+import android.content.ContentValues.TAG
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.financialproject.financialproject.data.model.FragmentInOutModel
 import com.financialproject.financialproject.data.model.InOut
@@ -67,11 +69,20 @@ class FirebaseController {
         }
     }
 
-    fun listInOut() {
-        db.collection("inOut").whereEqualTo("email", email).get()
-            .addOnSuccessListener { documents ->
+    val filter: MutableLiveData<String> = MutableLiveData("Incoming")
+
+    fun readData() {
+        db.collection("inOut").whereEqualTo("email", email)
+            .addSnapshotListener { value, e ->
+                if (e != null) {
+                    Log.w(TAG, "Listen failed.", e)
+                    return@addSnapshotListener
+                }
+
+                if (value == null) return@addSnapshotListener
+
                 val inOuts = mutableListOf<InOut>()
-                for (document in documents) {
+                for (document in value) {
                     val kindOfMove = document.data["kindOfMove"].toString()
                     val concept = document.data["concept"].toString()
                     val price = document.data["price"].toString()

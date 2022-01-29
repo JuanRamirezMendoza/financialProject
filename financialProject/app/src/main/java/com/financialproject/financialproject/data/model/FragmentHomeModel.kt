@@ -9,7 +9,7 @@ class FragmentHomeModel {
     }
 
     fun listInOut() {
-        firebaseController.listInOut()
+        firebaseController.readData()
     }
 
     fun listInOut1() = firebaseController.listIn
