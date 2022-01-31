@@ -3,6 +3,8 @@ package com.financialproject.financialproject.ui.view.fragments
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +21,7 @@ import com.financialproject.financialproject.ui.viewmodel.ERROR
 import com.financialproject.financialproject.ui.viewmodel.FragmenteInOutViewModel
 import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
+import java.text.NumberFormat
 
 class FragmentInOut : Fragment() {
 
@@ -43,6 +46,35 @@ class FragmentInOut : Fragment() {
         val adapterDescription =
             ArrayAdapter(requireContext(), R.layout.dropdown_item_description, itemsDescription)
         (binding.descriptionEdt as? AutoCompleteTextView)?.setAdapter(adapterDescription)
+
+        binding.priceText.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                var current = ""
+                if (s.toString() != current) {
+                    binding.priceText.removeTextChangedListener(this)
+
+                    val cleanString: String = s?.replace(
+                        """[$,.]""".toRegex(),
+                        ""
+                    ) ?: ""
+
+                    val parsed = cleanString.toDouble()
+                    val formatted = NumberFormat.getCurrencyInstance().format((parsed / 100))
+
+                    current = formatted
+                    binding.priceText.setText(formatted)
+                    binding.priceText.setSelection(formatted.length)
+
+                    binding.priceText.addTextChangedListener(this)
+                }
+            }
+        })
 
         fragmenteInOutViewModel.success.observe(this, {
             when (it) {

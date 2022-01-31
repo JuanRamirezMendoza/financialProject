@@ -31,11 +31,15 @@ class FragmenteInOutViewModel : BaseViewModel() {
                 || infoOk.isEmpty()
             ) error.value = ERROR.EMPTY_FIELDS
             else {
+
                 val model = FragmentInOutModel(
                     Firebase.auth.currentUser?.email.toString(),
                     kindOfMoveOk,
                     conceptOk,
-                    priceOk,
+                    priceOk.replace(
+                        """[$,]""".toRegex(),
+                        ""
+                    ),
                     dateOk,
                     descriptionOk,
                     infoOk

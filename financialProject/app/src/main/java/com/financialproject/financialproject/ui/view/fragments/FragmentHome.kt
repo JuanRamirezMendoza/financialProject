@@ -11,9 +11,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.financialproject.financialproject.R
-import com.financialproject.financialproject.data.extensionfunctions.count
+import com.financialproject.financialproject.data.extensionfunctions.countIncomming
+import com.financialproject.financialproject.data.extensionfunctions.countOutcome
+import com.financialproject.financialproject.data.extensionfunctions.countTotal
 import com.financialproject.financialproject.data.extensionfunctions.toast
-import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.FragmentHomeBinding
 import com.financialproject.financialproject.ui.view.LoginView
 import com.financialproject.financialproject.ui.view.adapter.MenuAdapter
@@ -44,7 +45,9 @@ class FragmentHome : Fragment() {
         fragmentHomeViewModel.listInOut()
 
         fragmentHomeViewModel.listInOut2().observe(this, { list ->
-            binding.incomingPrice.text = list.count("Incoming")
+            binding.incomingPrice.text = list.countIncomming("Incoming")
+            binding.outcomePrice.text = list.countOutcome("Expenses")
+            binding.totalPrice.text = list.countTotal()
             adapter.addData(list.toList())
         })
 
