@@ -95,7 +95,7 @@ class FirebaseController {
                             document.id,
                             kindOfMove,
                             concept,
-                            price,
+                            price.replace(".",""),
                             date,
                             description,
                             info

@@ -13,34 +13,27 @@ fun Fragment.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(activity, text, length).show()
 }
 
-fun List<InOut>.countIncomming(kindOfMove: String): String {
-    var incoming: Int = 0
+fun List<InOut>.countIncomming(): String {
+    var incoming: Long = 0
     this.f("Incoming").forEach {
-        incoming += it.price.toInt()
+        incoming += it.price.toLong()
     }
     return incoming.toString()
 }
 
-fun List<InOut>.countOutcome(kindOfMove: String): String {
-    var outCome: Double = 0.0
+fun List<InOut>.countOutcome(): String {
+    var outCome: Long = 0
     this.f("Expenses").forEach {
-        outCome += it.price.toDouble()
+        outCome +=  it.price.toLong()
     }
     return outCome.toString()
 }
 
 fun List<InOut>.countTotal(): String {
 
-    var total: Double = 0.0
-    total = countIncomming("Incoming").toDouble() - countOutcome("Expenses").toDouble()
+
+    val total = countIncomming().toLong() - countOutcome().toLong()
     return total.toString()
 }
 
 private fun List<InOut>.f(kindOfMove: String) = filter { m -> kindOfMove == m.kindOfMove }
-
-fun CharSequence.cleanString(xd: String): String {
-    return xd.replace(
-        """[$,.]""".toRegex(),
-        ""
-    ) ?: ""
-}

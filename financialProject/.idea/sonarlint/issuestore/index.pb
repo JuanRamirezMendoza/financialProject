@@ -14,7 +14,3 @@ Vapp/src/main/java/com/financialproject/financialproject/ui/viewmodel/LoginViewM
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-à
-Xapp/src/main/java/com/financialproject/financialproject/data/model/FragmentInOutModel.kt,2\1\215eeaa4aaf2d4c5f8be815ef32951e21dd10bd1
-è
-_app/src/main/java/com/financialproject/financialproject/ui/viewmodel/FragmenteInOutViewModel.kt,5\e\5ec546364b313bd260ebca32e4410b1ec825d16d

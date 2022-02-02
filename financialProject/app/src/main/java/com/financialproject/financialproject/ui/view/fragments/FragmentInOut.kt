@@ -21,6 +21,8 @@ import com.financialproject.financialproject.ui.viewmodel.ERROR
 import com.financialproject.financialproject.ui.viewmodel.FragmenteInOutViewModel
 import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
+import java.lang.NumberFormatException
+import java.text.DecimalFormat
 import java.text.NumberFormat
 
 class FragmentInOut : Fragment() {
@@ -64,12 +66,9 @@ class FragmentInOut : Fragment() {
                         ""
                     ) ?: ""
 
-                    val parsed = cleanString.toDouble()
-                    val formatted = NumberFormat.getCurrencyInstance().format((parsed / 100))
-
-                    current = formatted
-                    binding.priceText.setText(formatted)
-                    binding.priceText.setSelection(formatted.length)
+                    current = "$"+formatNumber(cleanString)
+                    binding.priceText.setText(current)
+                    binding.priceText.setSelection(current.length)
 
                     binding.priceText.addTextChangedListener(this)
                 }
@@ -105,5 +104,16 @@ class FragmentInOut : Fragment() {
         })
         return binding.root
 
+    }
+
+    fun formatNumber(str: String): String {
+        if (str.trim { it <= ' ' }.isNotEmpty()) try {
+            val value = str.toDouble()
+            val formatter = DecimalFormat("#,###")
+            return formatter.format(value).replace(',', '.')
+        } catch (e: NumberFormatException) {
+            e.printStackTrace()
+        }
+        return str
     }
 }

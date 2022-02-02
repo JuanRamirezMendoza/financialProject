@@ -27,7 +27,7 @@ class FragmentHome : Fragment() {
     private lateinit var fragmentHomeViewModel: FragmentHomeViewModel
     private lateinit var binding: FragmentHomeBinding
 
-    @SuppressLint("FragmentLiveDataObserve")
+    @SuppressLint("FragmentLiveDataObserve", "SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -45,9 +45,9 @@ class FragmentHome : Fragment() {
         fragmentHomeViewModel.listInOut()
 
         fragmentHomeViewModel.listInOut2().observe(this, { list ->
-            binding.incomingPrice.text = list.countIncomming("Incoming")
-            binding.outcomePrice.text = list.countOutcome("Expenses")
-            binding.totalPrice.text = list.countTotal()
+            binding.incomingPrice.text = "$" + list.countIncomming()
+            binding.outcomePrice.text = "$" + list.countOutcome()
+            binding.totalPrice.text = "$" + list.countTotal()
             adapter.addData(list.toList())
         })
 
