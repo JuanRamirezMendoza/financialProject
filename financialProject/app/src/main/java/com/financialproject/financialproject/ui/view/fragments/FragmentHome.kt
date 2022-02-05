@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.financialproject.financialproject.R
-import com.financialproject.financialproject.data.extensionfunctions.countIncomming
+import com.financialproject.financialproject.data.extensionfunctions.countIncoming
 import com.financialproject.financialproject.data.extensionfunctions.countOutcome
 import com.financialproject.financialproject.data.extensionfunctions.countTotal
 import com.financialproject.financialproject.data.extensionfunctions.toast
@@ -38,14 +38,14 @@ class FragmentHome : Fragment() {
         binding.viewModelFragmentHome = fragmentHomeViewModel
         binding.lifecycleOwner = this
 
-        val adapter = MenuAdapter(context)
+        val adapter = MenuAdapter()
         binding.recyclerViewHistory.adapter = adapter
         binding.recyclerViewHistory.layoutManager = LinearLayoutManager(context)
 
         fragmentHomeViewModel.listInOut()
 
         fragmentHomeViewModel.listInOut2().observe(this, { list ->
-            binding.incomingPrice.text = "$" + list.countIncomming()
+            binding.incomingPrice.text = "$" + list.countIncoming()
             binding.outcomePrice.text = "$" + list.countOutcome()
             binding.totalPrice.text = "$" + list.countTotal()
             adapter.addData(list.toList())

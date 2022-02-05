@@ -14,6 +14,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.financialproject.financialproject.R
+import com.financialproject.financialproject.data.extensionfunctions.formatNumber
 import com.financialproject.financialproject.data.extensionfunctions.toast
 import com.financialproject.financialproject.databinding.FragmentInOutBinding
 import com.financialproject.financialproject.ui.view.MenuView
@@ -21,9 +22,7 @@ import com.financialproject.financialproject.ui.viewmodel.ERROR
 import com.financialproject.financialproject.ui.viewmodel.FragmenteInOutViewModel
 import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
-import java.lang.NumberFormatException
 import java.text.DecimalFormat
-import java.text.NumberFormat
 
 class FragmentInOut : Fragment() {
 
@@ -66,7 +65,7 @@ class FragmentInOut : Fragment() {
                         ""
                     ) ?: ""
 
-                    current = "$"+formatNumber(cleanString)
+                    current = "$"+ formatNumber(cleanString)
                     binding.priceText.setText(current)
                     binding.priceText.setSelection(current.length)
 
@@ -106,14 +105,4 @@ class FragmentInOut : Fragment() {
 
     }
 
-    fun formatNumber(str: String): String {
-        if (str.trim { it <= ' ' }.isNotEmpty()) try {
-            val value = str.toDouble()
-            val formatter = DecimalFormat("#,###")
-            return formatter.format(value).replace(',', '.')
-        } catch (e: NumberFormatException) {
-            e.printStackTrace()
-        }
-        return str
-    }
 }

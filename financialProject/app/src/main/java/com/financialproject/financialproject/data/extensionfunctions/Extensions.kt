@@ -4,6 +4,7 @@ import android.app.Activity
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.financialproject.financialproject.data.model.InOut
+import java.text.DecimalFormat
 
 fun Activity.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(this, text, length).show()
@@ -13,27 +14,50 @@ fun Fragment.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(activity, text, length).show()
 }
 
-fun List<InOut>.countIncomming(): String {
+fun List<InOut>.countIncoming(): String {
     var incoming: Long = 0
     this.f("Incoming").forEach {
         incoming += it.price.toLong()
     }
-    return incoming.toString()
+    return formatNumber(incoming.toString())
 }
 
 fun List<InOut>.countOutcome(): String {
     var outCome: Long = 0
     this.f("Expenses").forEach {
-        outCome +=  it.price.toLong()
+        outCome += it.price.toLong()
     }
-    return outCome.toString()
+    return formatNumber(outCome.toString())
 }
 
 fun List<InOut>.countTotal(): String {
 
-
-    val total = countIncomming().toLong() - countOutcome().toLong()
-    return total.toString()
+    val incoming = countIncoming().replace(".", "")
+    val outCome = countIncoming().replace(".", "")
+    val total = incoming.toLong() - outCome.toLong()
+    return formatNumber(total.toString())
 }
 
 private fun List<InOut>.f(kindOfMove: String) = filter { m -> kindOfMove == m.kindOfMove }
+
+fun List<InOut>.formatNumber(str:String) : String{
+    if (str.trim { it <= ' ' }.isNotEmpty()) try {
+        val value = str.toDouble()
+        val formatter = DecimalFormat("#,###")
+        return formatter.format(value).replace(',', '.')
+    } catch (e: NumberFormatException) {
+        e.printStackTrace()
+    }
+    return str
+}
+
+fun Fragment.formatNumber(str:String) : String{
+    if (str.trim { it <= ' ' }.isNotEmpty()) try {
+        val value = str.toDouble()
+        val formatter = DecimalFormat("#,###")
+        return formatter.format(value).replace(',', '.')
+    } catch (e: NumberFormatException) {
+        e.printStackTrace()
+    }
+    return str
+}

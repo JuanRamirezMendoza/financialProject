@@ -14,3 +14,5 @@ Vapp/src/main/java/com/financialproject/financialproject/ui/viewmodel/LoginViewM
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+…
+Uapp/src/main/java/com/financialproject/financialproject/ui/viewmodel/BaseViewModel.kt,f\3\f331815605769bec4eacb6fe79f714452bf4d18e

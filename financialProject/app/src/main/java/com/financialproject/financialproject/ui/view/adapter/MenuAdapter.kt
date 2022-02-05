@@ -1,17 +1,18 @@
 package com.financialproject.financialproject.ui.view.adapter
 
-import android.content.Context
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.financialproject.financialproject.data.extensionfunctions.formatNumber
 import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.ViewInOutBinding
 
 class MenuAdapter(
-    private val context: Context?,
     private var list: List<InOut> = mutableListOf()
 ) : RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
 
+    @SuppressLint("NotifyDataSetChanged")
     fun addData(list: List<InOut>) {
         this.list = list
         notifyDataSetChanged()
@@ -35,7 +36,7 @@ class MenuAdapter(
         fun bind(inOut: InOut) {
             binding.concept.text = inOut.concept
             binding.description.text = inOut.description
-            binding.price.text = inOut.price
+            binding.price.text = list.formatNumber(inOut.price)
             binding.kindOfMove.text = inOut.kindOfMove
 
             //holder to see full info
