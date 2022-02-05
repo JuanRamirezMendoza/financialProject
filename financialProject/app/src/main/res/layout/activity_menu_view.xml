@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="50dp"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav"/>
+        app:navGraph="@navigation/nav" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom"

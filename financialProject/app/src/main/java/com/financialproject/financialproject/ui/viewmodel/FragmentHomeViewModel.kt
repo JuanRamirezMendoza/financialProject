@@ -13,7 +13,5 @@ class FragmentHomeViewModel : BaseViewModel() {
         }
     }
 
-    fun listInOut(){
-        model.listInOut()
-    }
+    fun listInOut() = model.listInOut()
 }

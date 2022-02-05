@@ -27,7 +27,7 @@ class FragmentHome : Fragment() {
     private lateinit var fragmentHomeViewModel: FragmentHomeViewModel
     private lateinit var binding: FragmentHomeBinding
 
-    @SuppressLint("FragmentLiveDataObserve", "SetTextI18n")
+    @SuppressLint("FragmentLiveDataObserve", "SetTextI18n", "UseCompatLoadingForDrawables")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -44,6 +44,7 @@ class FragmentHome : Fragment() {
 
         fragmentHomeViewModel.listInOut()
 
+        val drawableImg = requireContext().resources.getDrawable(R.drawable.motorbike,requireContext().theme)
         fragmentHomeViewModel.listInOut2().observe(this, { list ->
             binding.incomingPrice.text = "$" + list.countIncoming()
             binding.outcomePrice.text = "$" + list.countOutcome()

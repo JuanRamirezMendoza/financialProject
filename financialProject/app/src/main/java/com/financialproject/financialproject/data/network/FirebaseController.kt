@@ -69,8 +69,6 @@ class FirebaseController {
         }
     }
 
-    val filter: MutableLiveData<String> = MutableLiveData("Incoming")
-
     fun readData() {
         db.collection("inOut").whereEqualTo("email", email)
             .addSnapshotListener { value, e ->

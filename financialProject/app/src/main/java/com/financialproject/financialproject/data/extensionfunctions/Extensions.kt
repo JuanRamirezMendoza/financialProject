@@ -1,9 +1,16 @@
 package com.financialproject.financialproject.data.extensionfunctions
 
 import android.app.Activity
+import android.graphics.drawable.Drawable
 import android.widget.Toast
+import androidx.appcompat.content.res.AppCompatResources.getDrawable
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat.getDrawable
 import androidx.fragment.app.Fragment
+import com.financialproject.financialproject.R
 import com.financialproject.financialproject.data.model.InOut
+import io.grpc.Context
 import java.text.DecimalFormat
 
 fun Activity.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
@@ -16,7 +23,7 @@ fun Fragment.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
 
 fun List<InOut>.countIncoming(): String {
     var incoming: Long = 0
-    this.f("Incoming").forEach {
+    this.kindOfMoveFilter("Incoming").forEach {
         incoming += it.price.toLong()
     }
     return formatNumber(incoming.toString())
@@ -24,7 +31,7 @@ fun List<InOut>.countIncoming(): String {
 
 fun List<InOut>.countOutcome(): String {
     var outCome: Long = 0
-    this.f("Expenses").forEach {
+    this.kindOfMoveFilter("Expenses").forEach {
         outCome += it.price.toLong()
     }
     return formatNumber(outCome.toString())
@@ -38,7 +45,15 @@ fun List<InOut>.countTotal(): String {
     return formatNumber(total.toString())
 }
 
-private fun List<InOut>.f(kindOfMove: String) = filter { m -> kindOfMove == m.kindOfMove }
+/*fun List<InOut>.descriptionImg(): Drawable {
+    this.description("Transport").forEach {
+
+    }
+    return
+}*/
+
+private fun List<InOut>.kindOfMoveFilter(kindOfMove: String) = filter { m -> kindOfMove == m.kindOfMove }
+private fun List<InOut>.description(description: String) = filter { m -> description == m.description }
 
 fun List<InOut>.formatNumber(str:String) : String{
     if (str.trim { it <= ' ' }.isNotEmpty()) try {

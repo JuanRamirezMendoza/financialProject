@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.financialproject.financialproject.R
 import com.financialproject.financialproject.data.extensionfunctions.formatNumber
 import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.ViewInOutBinding
@@ -38,6 +39,7 @@ class MenuAdapter(
             binding.description.text = inOut.description
             binding.price.text = list.formatNumber(inOut.price)
             binding.kindOfMove.text = inOut.kindOfMove
+            binding.imgCard.setImageResource(R.drawable.add)
 
             //holder to see full info
             binding.mainLayout.setOnClickListener {
