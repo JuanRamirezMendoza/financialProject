@@ -39,8 +39,14 @@ class MenuAdapter(
             binding.description.text = inOut.description
             binding.price.text = list.formatNumber(inOut.price)
             binding.kindOfMove.text = inOut.kindOfMove
-            binding.imgCard.setImageResource(R.drawable.add)
+            when(inOut.description){
+                "Transport" -> binding.imgCard.setImageResource(R.drawable.motorbike)
+                "Food" -> binding.imgCard.setImageResource(R.drawable.food)
+                "Clothes" -> binding.imgCard.setImageResource(R.drawable.clothes)
+                "Market" -> binding.imgCard.setImageResource(R.drawable.market)
+                "Other Stuff" -> binding.imgCard.setImageResource(R.drawable.stuff)
 
+            }
             //holder to see full info
             binding.mainLayout.setOnClickListener {
             }
