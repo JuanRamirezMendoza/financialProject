@@ -21,6 +21,9 @@ import com.financialproject.financialproject.ui.view.adapter.MenuAdapter
 import com.financialproject.financialproject.ui.viewmodel.FragmentHomeViewModel
 import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
 
 class FragmentHome : Fragment() {
 
@@ -44,7 +47,11 @@ class FragmentHome : Fragment() {
 
         fragmentHomeViewModel.listInOut()
 
-        val drawableImg = requireContext().resources.getDrawable(R.drawable.motorbike,requireContext().theme)
+        val currentDate = LocalDateTime.now()
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
+        val formattedCurrentDate = currentDate.format(formatter)
+        binding.currentDate.text = formattedCurrentDate.toString()
+
         fragmentHomeViewModel.listInOut2().observe(this, { list ->
             binding.incomingPrice.text = "$" + list.countIncoming()
             binding.outcomePrice.text = "$" + list.countOutcome()
