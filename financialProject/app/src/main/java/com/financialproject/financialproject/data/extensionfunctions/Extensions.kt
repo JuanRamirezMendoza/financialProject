@@ -1,16 +1,9 @@
 package com.financialproject.financialproject.data.extensionfunctions
 
 import android.app.Activity
-import android.graphics.drawable.Drawable
 import android.widget.Toast
-import androidx.appcompat.content.res.AppCompatResources.getDrawable
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.core.content.ContextCompat
-import androidx.core.content.res.ResourcesCompat.getDrawable
 import androidx.fragment.app.Fragment
-import com.financialproject.financialproject.R
 import com.financialproject.financialproject.data.model.InOut
-import io.grpc.Context
 import java.text.DecimalFormat
 
 fun Activity.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
@@ -45,17 +38,10 @@ fun List<InOut>.countTotal(): String {
     return formatNumber(total.toString())
 }
 
-/*fun List<InOut>.descriptionImg(): Drawable {
-    this.description("Transport").forEach {
+private fun List<InOut>.kindOfMoveFilter(kindOfMove: String) =
+    filter { m -> kindOfMove == m.kindOfMove }
 
-    }
-    return
-}*/
-
-private fun List<InOut>.kindOfMoveFilter(kindOfMove: String) = filter { m -> kindOfMove == m.kindOfMove }
-private fun List<InOut>.description(description: String) = filter { m -> description == m.description }
-
-fun List<InOut>.formatNumber(str:String) : String{
+fun formatNumber(str: String): String {
     if (str.trim { it <= ' ' }.isNotEmpty()) try {
         val value = str.toDouble()
         val formatter = DecimalFormat("#,###")
@@ -66,13 +52,4 @@ fun List<InOut>.formatNumber(str:String) : String{
     return str
 }
 
-fun Fragment.formatNumber(str:String) : String{
-    if (str.trim { it <= ' ' }.isNotEmpty()) try {
-        val value = str.toDouble()
-        val formatter = DecimalFormat("#,###")
-        return formatter.format(value).replace(',', '.')
-    } catch (e: NumberFormatException) {
-        e.printStackTrace()
-    }
-    return str
-}
+fun InOut.formatPrice() = formatNumber(price)

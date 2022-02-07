@@ -22,7 +22,6 @@ import com.financialproject.financialproject.ui.viewmodel.ERROR
 import com.financialproject.financialproject.ui.viewmodel.FragmenteInOutViewModel
 import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
-import java.text.DecimalFormat
 
 class FragmentInOut : Fragment() {
 

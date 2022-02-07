@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.financialproject.financialproject.R
 import com.financialproject.financialproject.data.extensionfunctions.formatNumber
+import com.financialproject.financialproject.data.extensionfunctions.formatNumber2
+import com.financialproject.financialproject.data.extensionfunctions.formatPrice
 import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.ViewInOutBinding
 
@@ -37,7 +39,7 @@ class MenuAdapter(
         fun bind(inOut: InOut) {
             binding.concept.text = inOut.concept
             binding.description.text = inOut.description
-            binding.price.text = list.formatNumber(inOut.price)
+            binding.price.text = inOut.formatPrice()
             binding.kindOfMove.text = inOut.kindOfMove
             when(inOut.description){
                 "Transport" -> binding.imgCard.setImageResource(R.drawable.motorbike)
