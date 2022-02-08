@@ -33,7 +33,7 @@ fun List<InOut>.countOutcome(): String {
 fun List<InOut>.countTotal(): String {
 
     val incoming = countIncoming().replace(".", "")
-    val outCome = countIncoming().replace(".", "")
+    val outCome = countOutcome().replace(".", "")
     val total = incoming.toLong() - outCome.toLong()
     return formatNumber(total.toString())
 }

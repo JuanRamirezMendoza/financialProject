@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.financialproject.financialproject.R
-import com.financialproject.financialproject.data.extensionfunctions.formatNumber
-import com.financialproject.financialproject.data.extensionfunctions.formatNumber2
 import com.financialproject.financialproject.data.extensionfunctions.formatPrice
 import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.ViewInOutBinding
