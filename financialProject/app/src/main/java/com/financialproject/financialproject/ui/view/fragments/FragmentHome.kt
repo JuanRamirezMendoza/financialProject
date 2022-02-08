@@ -48,7 +48,7 @@ class FragmentHome : Fragment() {
         fragmentHomeViewModel.listInOut()
 
         val currentDate = LocalDateTime.now()
-        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
+        val formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy")
         val formattedCurrentDate = currentDate.format(formatter)
         binding.currentDate.text = formattedCurrentDate.toString()
 

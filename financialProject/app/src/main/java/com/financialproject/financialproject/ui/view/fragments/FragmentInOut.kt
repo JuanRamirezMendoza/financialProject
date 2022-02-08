@@ -1,6 +1,7 @@
 package com.financialproject.financialproject.ui.view.fragments
 
 import android.annotation.SuppressLint
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -22,6 +23,7 @@ import com.financialproject.financialproject.ui.viewmodel.ERROR
 import com.financialproject.financialproject.ui.viewmodel.FragmenteInOutViewModel
 import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
+import java.util.*
 
 class FragmentInOut : Fragment() {
 
@@ -64,7 +66,7 @@ class FragmentInOut : Fragment() {
                         ""
                     ) ?: ""
 
-                    current = "$"+ formatNumber(cleanString)
+                    current = "$" + formatNumber(cleanString)
                     binding.priceText.setText(current)
                     binding.priceText.setSelection(current.length)
 
@@ -73,10 +75,25 @@ class FragmentInOut : Fragment() {
             }
         })
 
+        binding.dateText.setOnClickListener {
+            val cal = Calendar.getInstance()
+            context?.apply {
+                DatePickerDialog(
+                    this, { _, year, month, dayOfMonth ->
+                        val dateText = "$dayOfMonth/${month + 1}/$year"
+                        binding.dateText.setText(dateText)
+                    }, cal[Calendar.YEAR], cal[Calendar.MONTH], cal[Calendar.DAY_OF_MONTH]
+                ).show()
+            }
+        }
+
         fragmenteInOutViewModel.success.observe(this, {
             when (it) {
                 SUCCESS.REGISTER_SUCCES -> {
                     toast("Register OK")
+                }
+                SUCCESS.CLEAR_FIELD ->{
+                    TODO("clear all fields")
                 }
             }
         })

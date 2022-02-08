@@ -46,6 +46,7 @@ class FragmenteInOutViewModel : BaseViewModel() {
                 )
                 model.registerInOut({
                     success.value = SUCCESS.REGISTER_SUCCES
+                    success.value = SUCCESS.CLEAR_FIELD
                 }, {
                     error.value = ERROR.COULD_NOT_ADD
                 })

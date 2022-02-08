@@ -21,7 +21,7 @@ enum class SUCCESS{
     LOGIN_SUCCES,
     REGISTER_SUCCES,
     LOG_OUT_SUCCESS,
-    LIST_IN_OUT
+    CLEAR_FIELD
 }
 
 enum class NAVIGATION{
