@@ -24,6 +24,16 @@
 
             <!-- Media -->
             <ImageView
+                android:id="@+id/img_up_down"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:padding="3dp"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/xd"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/home" />
+
+            <ImageView
                 android:id="@+id/img_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

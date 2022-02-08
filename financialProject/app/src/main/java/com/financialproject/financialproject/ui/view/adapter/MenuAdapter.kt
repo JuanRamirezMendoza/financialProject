@@ -47,6 +47,10 @@ class MenuAdapter(
                 "Other Stuff" -> binding.imgCard.setImageResource(R.drawable.stuff)
 
             }
+            when(inOut.kindOfMove){
+                "Incoming" -> binding.imgUpDown.setImageResource(R.drawable.up_arrow)
+                "Expenses" -> binding.imgUpDown.setImageResource(R.drawable.down_arrow)
+            }
             //holder to see full info
             binding.mainLayout.setOnClickListener {
             }
