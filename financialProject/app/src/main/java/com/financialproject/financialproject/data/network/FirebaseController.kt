@@ -11,6 +11,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 
 
 class FirebaseController {
@@ -100,6 +102,7 @@ class FirebaseController {
                         )
                     )
                 }
+                inOuts.sortByDescending { it.date }
                 listIn.value = inOuts
             }
     }

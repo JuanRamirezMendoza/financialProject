@@ -2,6 +2,7 @@ package com.financialproject.financialproject.ui.view.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.financialproject.financialproject.R
@@ -12,6 +13,8 @@ import com.financialproject.financialproject.databinding.ViewInOutBinding
 class MenuAdapter(
     private var list: List<InOut> = mutableListOf()
 ) : RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
+
+    private var lastDate = ""
 
     @SuppressLint("NotifyDataSetChanged")
     fun addData(list: List<InOut>) {
@@ -39,15 +42,22 @@ class MenuAdapter(
             binding.description.text = inOut.description
             binding.price.text = inOut.formatPrice()
             binding.kindOfMove.text = inOut.kindOfMove
-            when(inOut.description){
+
+            if (lastDate != inOut.date) {
+                binding.dateTextView.text = inOut.date
+                lastDate = inOut.date
+            } else {
+                binding.dateTextView.visibility = View.GONE
+            }
+
+            when (inOut.description) {
                 "Transport" -> binding.imgCard.setImageResource(R.drawable.motorbike)
                 "Food" -> binding.imgCard.setImageResource(R.drawable.food)
                 "Clothes" -> binding.imgCard.setImageResource(R.drawable.clothes)
                 "Market" -> binding.imgCard.setImageResource(R.drawable.market)
-                "Other Stuff" -> binding.imgCard.setImageResource(R.drawable.stuff)
-
+                else -> binding.imgCard.setImageResource(R.drawable.stuff)
             }
-            when(inOut.kindOfMove){
+            when (inOut.kindOfMove) {
                 "Incoming" -> binding.imgUpDown.setImageResource(R.drawable.up_arrow)
                 "Expenses" -> binding.imgUpDown.setImageResource(R.drawable.down_arrow)
             }

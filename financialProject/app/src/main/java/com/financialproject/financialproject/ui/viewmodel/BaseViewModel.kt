@@ -20,6 +20,7 @@ enum class ERROR{
 enum class SUCCESS{
     LOGIN_SUCCES,
     REGISTER_SUCCES,
+
     LOG_OUT_SUCCESS,
     CLEAR_FIELD
 }

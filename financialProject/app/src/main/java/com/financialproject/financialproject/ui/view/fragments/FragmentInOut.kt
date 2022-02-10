@@ -23,6 +23,8 @@ import com.financialproject.financialproject.ui.viewmodel.ERROR
 import com.financialproject.financialproject.ui.viewmodel.FragmenteInOutViewModel
 import com.financialproject.financialproject.ui.viewmodel.NAVIGATION
 import com.financialproject.financialproject.ui.viewmodel.SUCCESS
+import java.text.SimpleDateFormat
+import java.time.LocalDate
 import java.util.*
 
 class FragmentInOut : Fragment() {
@@ -30,7 +32,7 @@ class FragmentInOut : Fragment() {
     private lateinit var fragmenteInOutViewModel: FragmenteInOutViewModel
     private lateinit var binding: FragmentInOutBinding
 
-    @SuppressLint("FragmentLiveDataObserve")
+    @SuppressLint("FragmentLiveDataObserve", "SimpleDateFormat")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -80,7 +82,16 @@ class FragmentInOut : Fragment() {
             context?.apply {
                 DatePickerDialog(
                     this, { _, year, month, dayOfMonth ->
-                        val dateText = "$dayOfMonth/${month + 1}/$year"
+
+                        val calendar = Calendar.getInstance()
+                        calendar.set(Calendar.YEAR, year)
+                        calendar.set(Calendar.MONTH, month)
+                        calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+
+                        val simpleDateFormat = SimpleDateFormat("yyyy/MM/dd")
+
+                        val dateText =
+                            simpleDateFormat.format(calendar.time)
                         binding.dateText.setText(dateText)
                     }, cal[Calendar.YEAR], cal[Calendar.MONTH], cal[Calendar.DAY_OF_MONTH]
                 ).show()
@@ -91,9 +102,6 @@ class FragmentInOut : Fragment() {
             when (it) {
                 SUCCESS.REGISTER_SUCCES -> {
                     toast("Register OK")
-                }
-                SUCCESS.CLEAR_FIELD ->{
-                    TODO("clear all fields")
                 }
             }
         })
