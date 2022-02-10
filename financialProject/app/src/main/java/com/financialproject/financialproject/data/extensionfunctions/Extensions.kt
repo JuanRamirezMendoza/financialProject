@@ -10,10 +10,6 @@ fun Activity.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(this, text, length).show()
 }
 
-fun Fragment.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
-    Toast.makeText(activity, text, length).show()
-}
-
 fun List<InOut>.countIncoming(): String {
     var incoming: Long = 0
     this.kindOfMoveFilter("Incoming").forEach {

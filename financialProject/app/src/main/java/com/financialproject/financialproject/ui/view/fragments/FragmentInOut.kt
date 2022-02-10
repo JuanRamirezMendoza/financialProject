@@ -101,7 +101,7 @@ class FragmentInOut : Fragment() {
         fragmenteInOutViewModel.success.observe(this, {
             when (it) {
                 SUCCESS.REGISTER_SUCCES -> {
-                    toast("Register OK")
+                    requireActivity().toast("Register OK")
                 }
             }
         })
@@ -109,10 +109,10 @@ class FragmentInOut : Fragment() {
         fragmenteInOutViewModel.error.observe(this, {
             when (it) {
                 ERROR.EMPTY_FIELDS -> {
-                    toast("Fill all fields")
+                    requireActivity().toast("Fill all fields")
                 }
                 ERROR.COULD_NOT_ADD -> {
-                    toast("Could not add register")
+                    requireActivity().toast("Could not add register")
                 }
             }
         })

@@ -62,7 +62,7 @@ class FragmentHome : Fragment() {
         fragmentHomeViewModel.success.observe(this, {
             when (it) {
                 SUCCESS.LOG_OUT_SUCCESS -> {
-                    toast("sesion cerrada correctamente")
+                    requireActivity().toast("sesion cerrada correctamente")
                 }
             }
         })
