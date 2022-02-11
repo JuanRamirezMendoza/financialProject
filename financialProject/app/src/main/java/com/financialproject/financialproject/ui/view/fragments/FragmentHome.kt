@@ -1,6 +1,7 @@
 package com.financialproject.financialproject.ui.view.fragments
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -41,7 +42,7 @@ class FragmentHome : Fragment() {
         binding.viewModelFragmentHome = fragmentHomeViewModel
         binding.lifecycleOwner = this
 
-        val adapter = MenuAdapter()
+        val adapter = MenuAdapter(requireContext())
         binding.recyclerViewHistory.adapter = adapter
         binding.recyclerViewHistory.layoutManager = LinearLayoutManager(context)
 

@@ -1,19 +1,24 @@
 package com.financialproject.financialproject.ui.view.adapter
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.financialproject.financialproject.R
 import com.financialproject.financialproject.data.extensionfunctions.formatPrice
 import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.ViewInOutBinding
+import com.financialproject.financialproject.ui.view.fragments.FragmentHome
 
 
 class MenuAdapter(
+    val context: Context,
     private var list: List<InOut> = mutableListOf()
 ) : RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
+
 
     private var lastDate = ""
 
@@ -33,11 +38,17 @@ class MenuAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(list[position])
+        holder.layoutItem.setOnClickListener{
+            Toast.makeText(context, "XD", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int = list.size
 
     inner class ViewHolder(val binding: ViewInOutBinding) : RecyclerView.ViewHolder(binding.root) {
+
+        val layoutItem = binding.layoutItem
+
         fun bind(inOut: InOut) {
             binding.apply {
                 concept.text = inOut.concept
