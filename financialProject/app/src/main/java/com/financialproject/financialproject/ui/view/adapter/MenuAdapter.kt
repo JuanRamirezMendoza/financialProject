@@ -10,6 +10,7 @@ import com.financialproject.financialproject.data.extensionfunctions.formatPrice
 import com.financialproject.financialproject.data.model.InOut
 import com.financialproject.financialproject.databinding.ViewInOutBinding
 
+
 class MenuAdapter(
     private var list: List<InOut> = mutableListOf()
 ) : RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
@@ -38,31 +39,37 @@ class MenuAdapter(
 
     inner class ViewHolder(val binding: ViewInOutBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(inOut: InOut) {
-            binding.concept.text = inOut.concept
-            binding.description.text = inOut.description
-            binding.price.text = inOut.formatPrice()
-            binding.kindOfMove.text = inOut.kindOfMove
+            binding.apply {
+                concept.text = inOut.concept
+                description.text = inOut.description
+                price.text = inOut.formatPrice()
+                kindOfMove.text = inOut.kindOfMove
 
-            if (lastDate != inOut.date) {
-                binding.dateTextView.text = inOut.date
-                lastDate = inOut.date
-            } else {
-                binding.dateTextView.visibility = View.GONE
-            }
+                if (lastDate != inOut.date) {
+                    dateTextView.text = inOut.date
+                    lastDate = inOut.date
+                } else {
+                    dateTextView.visibility = View.GONE
+                }
 
-            when (inOut.description) {
-                "Transport" -> binding.imgCard.setImageResource(R.drawable.motorbike)
-                "Food" -> binding.imgCard.setImageResource(R.drawable.food)
-                "Clothes" -> binding.imgCard.setImageResource(R.drawable.clothes)
-                "Market" -> binding.imgCard.setImageResource(R.drawable.market)
-                else -> binding.imgCard.setImageResource(R.drawable.stuff)
-            }
-            when (inOut.kindOfMove) {
-                "Incoming" -> binding.imgUpDown.setImageResource(R.drawable.up_arrow)
-                "Expenses" -> binding.imgUpDown.setImageResource(R.drawable.down_arrow)
-            }
-            //holder to see full info
-            binding.mainLayout.setOnClickListener {
+                imgCard.setImageResource(
+                    when (inOut.description) {
+                        "Transport" -> R.drawable.motorbike
+                        "Food" -> R.drawable.food
+                        "Clothes" -> R.drawable.clothes
+                        "Market" -> R.drawable.market
+                        else -> R.drawable.stuff
+                    }
+                )
+                imgUpDown.setImageResource(
+                    when (inOut.kindOfMove) {
+                        "Incoming" -> R.drawable.up_arrow
+                        else -> R.drawable.down_arrow
+                    }
+                )
+                //holder to see full info
+                mainLayout.setOnClickListener {
+                }
             }
         }
     }

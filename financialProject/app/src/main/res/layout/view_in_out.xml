@@ -9,27 +9,18 @@
         android:id="@+id/date_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="13dp"
         android:layout_marginTop="10dp"
         android:text="@string/date"
         android:textColor="@color/black"
         android:textStyle="bold|italic"
         android:visibility="visible" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/date_text_view"
-        app:cardElevation="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="8dp">
-
         <RelativeLayout
+            android:layout_below="@id/date_text_view"
             android:layout_width="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
@@ -44,22 +35,37 @@
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/home" />
 
-            <ImageView
-                android:id="@+id/img_card"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#34C8C8C8"
                 android:contentDescription="@string/xd"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/home" />
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/img_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/xd"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/home" />
+
+            </com.google.android.material.card.MaterialCardView>
 
             <LinearLayout
                 android:id="@+id/linear_market"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/img_card"
+                android:layout_toEndOf="@+id/card_img"
                 android:orientation="vertical"
                 android:padding="16dp">
 
@@ -130,6 +136,4 @@
             </LinearLayout>
 
         </RelativeLayout>
-
-    </com.google.android.material.card.MaterialCardView>
 </RelativeLayout>
